@@ -3,18 +3,18 @@ layout: default
 ---
 <main class="page">
   <h1 class="page__title">
-    {{ title }}
+    {{ page.title }}
   </h1>
 
-  {% if byline != null %}
+  {% if page.byline != null %}
     <div class="page__byline">
-      {{ byline }}
+      {{ page.byline }}
     </div>
   {% endif %}
 
-  {% if byline != null %}
+  {% if page.byline != null %}
     <div class="page__intro">
-      {{ intro }}
+      {{ page.intro }}
     </div>
   {% endif %}
 

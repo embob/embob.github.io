@@ -1,12 +1,22 @@
 ---
 layout: page
 title: About
+byline: Emma Maria
+intro:
 permalink: /about/
 menu-title: About
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<h3>Articles</h3>
+  <!-- Article teasers -->
+{% for article in site.articles %}
+  <h2>{{ article.title }}</h2>
+  <p>{{ article.date }}</p>
+  <a href="{{ article.link }}">Read more</a>
+{% endfor %}
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+<h3>Presentations</h3>
+  <!-- Presentation teasers -->
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<h3>Projects</h3>
+  <!-- Project teasers -->

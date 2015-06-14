@@ -13,3 +13,9 @@ skype_username: emma.karayiannis
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+- articles
+- presentations
+- projects
