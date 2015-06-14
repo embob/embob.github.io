@@ -1,23 +1,40 @@
 ---
 layout: default
+title: Emma Maria Karayiannis
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<main>
+  <h1 class="huge-heading">
+    {{ title }}
+  </h1>
+  <h2 class="byline">
+    Frontend developer, Drupal themer, cat content extraordinaire.
+  </h2>
+  <p class="intro">
+    Bocconcini cheese and wine chalk and cheese. Emmental cottage cheese cheesecake roquefort red leicester roquefort edam cheese slices. Cheese strings feta cheesy grin fromage frais mozzarella melted cheese monterey jack when the cheese comes out everybody's happy. Who moved my cheese taleggio cream cheese fondue bocconcini chalk and cheese fondue.
+  </p>
+  <ul class="horizontal-social-links">
+    <li>
+      <a href="https://www.drupal.org/u/emma.maria">Drupal profile</a>
+    </li>
+    <li>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/emma_maria88">Twitter profile</a>
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</main>
+  <!-- purposeful space -->
+<aside>
+  <div>
+    <!-- me -->
+    <img src="/images/img-1.png" alt="image" height="200" width="200">
+    <!-- Bartik -->
+    <img src="/images/img-2.png" alt="image" height="200" width="200">
+    <!-- Travel picture -->
+    <img src="/images/img-3.png" alt="image" height="200" width="200">
+    <!-- Something to sum me up -->
+    <img src="/images/img-4.png" alt="image" height="200" width="200">
+  </div>
+</aside>
