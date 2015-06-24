@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
-<main class="page">
-  <h1 class="page__title">
+<main>
+  <h1>
     {{ page.title }}
   </h1>
 
   {% if page.byline != null %}
-    <div class="page__byline">
+    <h2 class="byline">
       {{ page.byline }}
-    </div>
+    </h2>
   {% endif %}
 
   {% if page.byline != null %}
-    <div class="page__intro">
+    <p class="intro">
       {{ page.intro }}
-    </div>
+    </p>
   {% endif %}
 
   {{ content }}
