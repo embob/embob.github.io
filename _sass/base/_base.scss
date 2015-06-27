@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Base element styles for the site.
+ */
+
+body {
+  // font-family: ;
+  // font-size: ;
+  // line-height: ;
+  // color: ;
+  // background: ;
+}
+
+h1, h2, h3, h4 {
+  // font-family: ;
+  // font-weight ;
+}
+
+p {
+
+}
+
+a {
+  &:link, &:visited {
+    text-decoration: none;
+    // color: ;
+  }
+  &:hover {
+    // color: ;
+    text-decoration: underline;
+  }
+}
+
+@mixin h1 {
+  // font-size: ;
+}
+@mixin h2 {
+  // font-size: ;
+}
+@mixin h3 {
+  // font-size: ;
+}
+@mixin h4 {
+  // font-size: ;
+}
+
+h1 {
+  @include h1;
+}
+h2 {
+  @include h2;
+}
+h3 {
+  @include h3;
+}
+h4 {
+  @include h4;
+}
+
+
+
