@@ -22,12 +22,13 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$mobile: 767px;
-$tablet: 768px;
-$desktop: 980px;
+// $mobile: 767px;
+// $tablet: 768px;
+// $desktop: 980px;
 
 $mobile: "(min-width: 0px) and (max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 979px)";
+$tablet-up: "(min-width: 768px)";
 $desktop: "(min-width: 980px)";
 
 .wrapper {
@@ -39,5 +40,13 @@ $desktop: "(min-width: 980px)";
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base/reset",
-        "base/elements"
+        "base/elements",
+        "layout/layout",
+        "layout/layout-primary-first",
+        "layout/layout-primary-second",
+        "layout/layout-halves",
+        "layout/layout-thirds",
+        "components/header",
+        "components/footer",
+        "components/main-navigation"
 ;

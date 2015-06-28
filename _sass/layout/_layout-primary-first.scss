@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Styles for the resuable layout "Primary First".
+ * The first region is wider and more prominent than the second.
+ */
+
+.layout-primary-first__primary {
+  @media #{$tablet-up} {
+    float: left;
+    width: 60%;
+    margin-right: 5%;
+  }
+}
+.layout-primary-first__secondary {
+  @media #{$tablet-up} {
+    float: right;
+    width: 35%;
+  }
+}

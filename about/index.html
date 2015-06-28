@@ -6,37 +6,40 @@ intro:
 permalink: /about/
 menu-title: About
 ---
-<h3>Ten random facts</h3>
 
+<main class="main layout-primary-second clearfix">
+  <div class="layout-primary-second__secondary">
+    <p class="intro">Intro
+    </p>
 
-<h3>Community</h3>
-  All the things I do.
+    <h3>Community</h3>
+      All the things I do.
+  </div>
+  <div class="layout-primary-second__primary">
 
-<h3>Articles</h3>
-  <!-- Article teasers -->
-{% for article in site.articles reversed %}
-  <h2>{{ article.title }}</h2>
-  <p>{{ article.date }}</p>
-  <a href="{{ article.link }}">Read more</a>
-{% endfor %}
+    <h3>Articles</h3>
 
-<h3>Presentations</h3>
-  <!-- Presentation teasers -->
-  {% for presentation in site.presentations reversed %}
-  <p>{{ presentation.status }}</p>
-  <h2>{{ presentation.title }}</h2>
-  <p>{{ presentation.date }}</p>
-  <a href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
-  <a href="{{ presentation.slides }}">Slides</a>
-  <a href="{{ presentation.video }}">Video</a>
-{% endfor %}
+      <!-- Article teasers -->
+      {% for article in site.articles reversed %}
+        <section class="article-teaser">
+          <h2>{{ article.title }}</h2>
+          <p>{{ article.date }}</p>
+          <a href="{{ article.link }}">Read more</a>
+        </section>
+      {% endfor %}
 
-<h3>Projects</h3>
-  <!-- Project teasers -->
-  This site
-  Bartik
-  u-blox
-  ns-group
-  Venture
-  The Voice
+    <h3>Presentations</h3>
+      <!-- Presentation teasers -->
+      <section class="speaking-teaser">
+        {% for presentation in site.presentations reversed %}
+        <p>{{ presentation.status }}</p>
+        <h2>{{ presentation.title }}</h2>
+        <p>{{ presentation.date }}</p>
+        <a href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
+        <a href="{{ presentation.slides }}">Slides</a>
+        <a href="{{ presentation.video }}">Video</a>
+      </section>
+    {% endfor %}
 
+  </div>
+</main>
