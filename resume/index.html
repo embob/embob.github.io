@@ -5,13 +5,30 @@ permalink: /cv/
 menu-title: CV
 ---
 
-<main>
-  <section>
+<header class="header clearfix" role="banner">
+  <div class="header__inner site-container clearfix">
+    {% include navigation.html %}
+    <div class="header__content">
+      <h1 class="huge-heading">
+        {{ page.title }}
+      </h1>
+      <div class="contact-block">
+        <ul class="inline-links">
+          <li>emma.karayiannis@gmail.com</li>
+          <li>emma.maria</li>
+          <li>emma.karayiannis</li>
+          <li>+41 79 958 95 78</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <h2>Frontend</h2>
-    <div class="layout-thirds clearfix">
+<main class="site-container site-container--cv">
+  <section class="cv-section clearfix">
+    <h2 class="cv-section__title">Frontend</h2>
+    <div class="layout-thirds clearfix cv-section__sub-section">
       <div class="layout-thirds__first">
-        <h3>Languages use + ability level</h3>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -39,8 +56,8 @@ menu-title: CV
       </div>
     </div>
 
-    <div class="layout-halves clearfix">
-      <div class="layout-halves__first">
+    <div class="cv-section__sub-section layout-halves clearfix">
+      <div class="layout-halves__first ">
         <h3>Skills to maintain code quality</h3>
         <ul>
           <li>Visual regression testing.</li>
@@ -64,10 +81,10 @@ menu-title: CV
 
   </section>
 
-  <section>
-    <h2>Drupal</h2>
+  <section class="cv-section clearfix">
+    <h2 class="cv-section__title">Drupal</h2>
 
-    <div class="layout-halves clearfix">
+    <div class="cv-section__sub-section layout-halves clearfix">
       <div class="layout-halves__first">
         <h3>Drupal 7</h3>
         <ul>
@@ -91,11 +108,11 @@ menu-title: CV
     </div>
   </section>
 
-  <section>
+  <section class="cv-section clearfix">
 
-    <h2>Tools</h2>
+    <h2 class="cv-section__title">Tools</h2>
 
-    <div class="layout-thirds clearfix">
+    <div class="cv-section__sub-section layout-thirds clearfix">
       <div class="layout-thirds__first">
         <h3>Project Management</h3>
         <ul>
@@ -130,11 +147,11 @@ menu-title: CV
 
   </section>
 
-  <section>
+  <section class="cv-section clearfix">
 
-    <h2>Employment</h2>
+    <h2 class="cv-section__title">Employment</h2>
 
-    <section class="employment">
+    <section class="cv-section__sub-section employment">
       <header>
         <h3>Frontend Developer</h3>
         <p>January 2014 - Current</p>
@@ -149,9 +166,9 @@ menu-title: CV
       <p>
         <a href="#" target="_blank">The Voice of Switzerland 2014</a>, <a href="#" target="_blank">Venture</a>, <a href="#" target="_blank">Sigvaris</a>, <a href="#" target="_blank">nsGroup</a>, <a href="#" target="_blank">Vetrotech</a> and <a href="#" target="_blank">Amazee Labs</a>.
       </p>
-    </div>
+    </section>
 
-    <section class="employment">
+    <section class="cv-section__sub-section employment">
       <header>
         <h3>Drupal & Frontend Developer</h3>
         <p class="duration float-right">
@@ -166,11 +183,11 @@ menu-title: CV
           <li>Providing site user training to clients.</li>
         </ul>
         <h4>Projects</h4>
-          <p><a href="">Moorfields NHS Eye Hospital, Charterhouse.
+          <p><a href="#" target="_blank">Moorfields NHS Eye Hospital</a>, <a href="#" target="_blank">Charterhouse</a>.
       </div>
     </section>
 
-     <section class="employment">
+     <section class="cv-section__sub-section employment-section">
       <header>
         <h3>Drupal Developer</h3>
         <p class="duration float-right">August 2011 - February 2013</p>
@@ -188,9 +205,9 @@ menu-title: CV
 
   </section>
 
-  <section>
+  <section class="cv-section clearfix">
     <h2>Education</h2>
-    <div>
+    <div class="cv-section__sub-section education">
       <h3>Brunel University — UK</h3>
       <div>
         <p>Interactive Computing BSc, Upper Second class honours
@@ -202,15 +219,15 @@ menu-title: CV
         <p>2008 — 2009</p>
       </div>
     </div>
-    <div>
+    <div class="cv-section__sub-section education">
       <h3>Chislehurst &amp; Sidcup Grammar School — UK</h3>
-      <div>
-        <p>Three A-Levels — ICT, Mathematics, Design Technology</p>
-        <p>2004 — 2006</p>
+      <div class="education__qualification-wrapper clearfix">
+        <p class="education__qualification">Three A-Levels — ICT, Mathematics, Design Technology</p>
+        <p class="education__qualification-year">2004 — 2006</p>
       </div>
-      <div>
-        <p>Ten passes at GCSE level</p>
-        <p>2002 — 2004</p>
+      <div class="education__qualification-wrapper clearfix">
+        <p class="education__qualification">Ten passes at GCSE level</p>
+        <p class="education__qualification-year">2002 — 2004</p>
     </div>
   </section>
 </main>
