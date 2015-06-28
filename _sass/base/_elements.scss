@@ -5,8 +5,8 @@
 
 body {
   // font-family: ;
-  font-size: 20px;
-  // line-height: 1.2em;
+  font-size: 125%;
+  line-height: 1.4;
   // color: ;
   // background: ;
 }
@@ -14,10 +14,6 @@ body {
 h1, h2, h3, h4 {
   // font-family: ;
   // font-weight ;
-}
-
-p {
-  line-height: 1.2em;
 }
 
 a {
@@ -36,7 +32,7 @@ a {
 }
 @mixin h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @mixin h3 {
   font-size: 26px;

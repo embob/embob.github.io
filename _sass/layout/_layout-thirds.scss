@@ -5,13 +5,16 @@
 
 .layout-thirds__first,
 .layout-thirds__second {
-
-  float: left;
-  width: 30%;
-  margin-right: 5%;
+  @media #{$tablet-up} {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+  }
 }
 
 .layout-thirds__third {
-  float: right;
-  width: 30%;
+  @media #{$tablet-up} {
+    float: right;
+    width: 30%;
+  }
 }

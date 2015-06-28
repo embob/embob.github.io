@@ -1,0 +1,79 @@
+---
+layout: default
+title: Emma Maria Karayiannis
+byline: in the Drupal commmunity.
+intro:
+permalink: /Drupal/
+menu-title: Drupal
+---
+
+<header class="header header--home clearfix" role="banner">
+  <div class="header__inner site-container">
+    {% include navigation.html %}
+    <div class="header__content">
+      <h1 class="huge-heading">
+        {{ page.title }}
+      </h1>
+      <h2 class="byline">
+        {{ page.byline }}
+      </h2>
+    </div>
+  </div>
+</header>
+
+<main class="main-content site-container community">
+  <div class="layout-primary-second clearfix community__section">
+    <div class="layout-primary-second__secondary">
+      <h2>Achievements and responsibilities</h2>
+    </div>
+    <div class="layout-primary-second__primary ">
+      <ul>
+        <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
+        <li>Mentoring new contributors at sprints.</li>
+        <li>Organising/hosting sprints at Camps.</li>
+        <li>Organiser of Drupalcamp Brighton.</li>
+        <li>Organiser of Frontend United.</li>
+        <li>Active contributor to Drupal 8.</li>
+        <li>Helped maked Drupal.org responsive.</li>
+        <li>
+    </div>
+  </div>
+
+  <div class="layout-primary-second clearfix community__section">
+    <div class="layout-primary-second__secondary">
+      <h2>Presentations</h2>
+    </div>
+    <div class="layout-primary-second__primary">
+      <!-- Presentation teasers -->
+      {% for presentation in site.presentations reversed %}
+        <section class="speaking-teaser">
+          <p>{{ presentation.status }}</p>
+          <h3>{{ presentation.title }}</h2>
+          <p>{{ presentation.date }}</p>
+          <a href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
+          <a href="{{ presentation.slides }}">Slides</a>
+          <a href="{{ presentation.video }}">Video</a>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="layout-primary-second clearfix community__section">
+    <div class="layout-primary-second__secondary">
+      <h2>Blog posts</h2>
+    </div>
+    <div class="layout-primary-second__primary">
+      <!-- Article teasers -->
+      {% for article in site.articles reversed %}
+        <section class="article-teaser">
+          <h3>{{ article.title }}</h2>
+          <p>{{ article.date }}</p>
+          <a href="{{ article.link }}">Read more</a>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+</main>

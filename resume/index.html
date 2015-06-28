@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: default
 title: Emma Maria Karayiannis
 permalink: /cv/
 menu-title: CV
@@ -24,36 +24,20 @@ menu-title: CV
   </div>
 </header>
 
-<main class="site-container site-container--cv">
+<main class="site-container site-container--cv main-content">
   <section class="cv-section clearfix">
     <h2 class="cv-section__title">Frontend</h2>
-    <div class="layout-thirds clearfix cv-section__sub-section">
-      <div class="layout-thirds__first">
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Sass + Compass</li>
-          <li>jQuery</li>
-          <li>PHP</li>
-        </ul>
-      </div>
-
-      <div class="layout-thirds__second">
-        <ul>
-          <li>SMACSS</li>
-          <li>BEM</li>
-          <li>Responsive web design</li>
-          <li>Mobile first</li>
-        </ul>
-      </div>
-
-      <div class="layout-thirds__third">
-        <ul>
-          <li>Photoshop</li>
-          <li>Wireframes</li>
-          <li>Designing in the browser</li>
-        </ul>
-      </div>
+    <div class="cv-section__sub-section">
+      <h3 class="inline-heading">Languages: </h2>
+      <p>HTML5, CSS3, Sass + Compass, jQuery, PHP.</p>
+    </div>
+    <div class="cv-section__sub-section">
+      <h3 class="inline-heading">Write code using: </h3>
+      <p>SMACSS, BEM, Responsive Web Design, Mobile First approach.</p>
+    </div>
+    <div class="cv-section__sub-section">
+      <h3 class="inline-heading">Interpret design using: </h3>
+      <p>Photoshop, Wireframes, Designing in the browser.</p>
     </div>
 
     <div class="cv-section__sub-section layout-halves clearfix">
@@ -152,46 +136,45 @@ menu-title: CV
     <h2 class="cv-section__title">Employment</h2>
 
     <section class="cv-section__sub-section employment">
-      <header>
-        <h3>Frontend Developer</h3>
-        <p>January 2014 - Current</p>
-        <p>at Amazee Labs</p>
+      <header class="employment__header">
+        <p class="float-right employment__duration">January 2014 - Current</p>
+        <h3 class="employment__role">Frontend Developer</h3>
+        <p class="employment__company">at Amazee Labs.</p>
       </header>
       <ul>
         <li>Creating responsive themes in Drupal 7 and 8.</li>
         <li>Assisting with sitebuilding</li>
         <li>Teaching the team about frontend and best practices.</li>
       </ul>
-      <h4>Projects</h4>
-      <p>
+      <h4 class="employment__projects-heading inline-heading">Projects:</h4>
+      <p class="employment__projects">
         <a href="#" target="_blank">The Voice of Switzerland 2014</a>, <a href="#" target="_blank">Venture</a>, <a href="#" target="_blank">Sigvaris</a>, <a href="#" target="_blank">nsGroup</a>, <a href="#" target="_blank">Vetrotech</a> and <a href="#" target="_blank">Amazee Labs</a>.
       </p>
     </section>
 
     <section class="cv-section__sub-section employment">
-      <header>
-        <h3>Drupal & Frontend Developer</h3>
-        <p class="duration float-right">
-          February 2013 - December 2013
-        </p>
-        <p class="employment__company">at Precedent</p>
+      <header class="employment__header">
+        <p class="employment__duration">February 2013 - December 2013</p>
+        <h3 class="employment__role">Drupal & Frontend Developer</h3>
+        <p class="employment__company">at Precedent.</p>
       </header>
-        <ul>
-          <li>Sitebuilding and theming Drupal 7 brochure style sites.</li>
-          <li>Frontend evangelist of the Drupal team.</li>
-          <li>Managing client expectations and giving feedback.</li>
-          <li>Providing site user training to clients.</li>
-        </ul>
-        <h4>Projects</h4>
-          <p><a href="#" target="_blank">Moorfields NHS Eye Hospital</a>, <a href="#" target="_blank">Charterhouse</a>.
-      </div>
+      <ul>
+        <li>Sitebuilding and theming Drupal 7 brochure style sites.</li>
+        <li>Frontend evangelist of the Drupal team.</li>
+        <li>Managing client expectations and giving feedback.</li>
+        <li>Providing site user training to clients.</li>
+      </ul>
+      <h4 class="employment__projects-heading inline-heading">Projects:</h4>
+      <p class="employment__projects">
+        <a href="#" target="_blank">Moorfields NHS Eye Hospital</a>, <a href="#" target="_blank">Charterhouse</a>.
+      </p>
     </section>
 
-     <section class="cv-section__sub-section employment-section">
-      <header>
-        <h3>Drupal Developer</h3>
-        <p class="duration float-right">August 2011 - February 2013</p>
-        <p>at i-KOS</p>
+    <section class="cv-section__sub-section employment">
+      <header class="employment__header">
+        <p class="employment__duration">August 2011 - February 2013</p>
+        <h3 class="employment__role">Drupal Developer</h3>
+        <p class="employment__company">at i-KOS.</p>
       </header>
       <ul>
         <li>Working on support tickets from clients.</li>
@@ -199,8 +182,10 @@ menu-title: CV
         <li>Managing client expectations and providing feedback.</li>
         <li>HTML email campaigns.</li>
       </ul>
-      <h4>Projects</h4>
-      <p><a href="" target="_blank">Krisy Kreme gifts site.</a></p>
+      <h4 class="employment__projects-heading inline-heading">Projects:</h4>
+      <p class="employment__projects">
+        <a href="" target="_blank">Krisy Kreme gifts site.</a>.
+      </p>
     </section>
 
   </section>
@@ -208,15 +193,17 @@ menu-title: CV
   <section class="cv-section clearfix">
     <h2>Education</h2>
     <div class="cv-section__sub-section education">
-      <h3>Brunel University — UK</h3>
-      <div>
-        <p>Interactive Computing BSc, Upper Second class honours
+      <h3 class="education__establishment">Brunel University — UK</h3>
+      <div class="education__qualification-wrapper clearfix">
+        <p class="education__qualification">
+          Interactive Computing BSc, Upper Second class honours
         </p>
-        <p>2006 — 2010</p>
+        <p class="education__qualification-year">2006 — 2010</p>
       </div>
-      <div>
-        <p>Diploma in Professional Development (Distinction)</p>
-        <p>2008 — 2009</p>
+      <div class="education__qualification-wrapper clearfix">
+        <p class="education__qualification">
+          Diploma in Professional Development (Distinction)</p>
+        <p class="education__qualification-year">2008 — 2009</p>
       </div>
     </div>
     <div class="cv-section__sub-section education">

@@ -7,13 +7,13 @@
 .layout-primary-first__primary {
   @media #{$tablet-up} {
     float: left;
-    width: 60%;
+    width: 65%;
     margin-right: 5%;
   }
 }
 .layout-primary-first__secondary {
   @media #{$tablet-up} {
     float: right;
-    width: 35%;
+    width: 30%;
   }
 }
