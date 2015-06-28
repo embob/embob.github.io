@@ -1,0 +1,11 @@
+.image-block img {
+  width: 48%;
+  margin-right: 4%;
+  float: left;
+  margin-bottom: 4%;
+  height: auto;
+  &:nth-child(2n+2) {
+    float: right;
+    margin: 0;
+  }
+}

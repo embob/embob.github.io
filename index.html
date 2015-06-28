@@ -3,18 +3,22 @@ layout: default
 title: Emma Maria Karayiannis
 ---
 
-<header class="header" role="banner">
-  {% include navigation.html %}
-  <h1 class="huge-heading">
-    {{ page.title }}
-  </h1>
-  <h2 class="byline">
-    Frontend developer, Drupal themer, cat content extraordinaire.
-  </h2>
+<header class="header header--home clearfix" role="banner">
+  <div class="header__inner site-container">
+    {% include navigation.html %}
+    <div class="header__headings">
+      <h1 class="huge-heading">
+        {{ page.title }}
+      </h1>
+      <h2 class="byline byline--home">
+        Frontend developer, Drupal themer, cat content extraordinaire.
+      </h2>
+    </div>
+  </div>
 </header>
-<div class="layout-primary-first">
+<div class="layout-primary-first site-container">
   <main class="layout-primary-first__primary">
-    <p class="intro">
+    <p class="intro intro--home">
       Bocconcini cheese and wine chalk and cheese. Emmental cottage cheese cheesecake roquefort red leicester roquefort edam cheese slices. Cheese strings feta cheesy grin fromage frais mozzarella melted cheese monterey jack when the cheese comes out everybody's happy. Who moved my cheese taleggio cream cheese fondue bocconcini chalk and cheese fondue.
     </p>
     <ul class="horizontal-social-links">
