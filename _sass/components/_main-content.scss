@@ -1,0 +1,11 @@
+/**
+ * @file
+ * ...
+ */
+
+.main-content {
+  margin-bottom: 60px;
+  @media #{$tablet-up} {
+    margin-bottom: 80px;
+  }
+}

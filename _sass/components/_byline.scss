@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Styles for the Byline component.
+ */
+
+.byline {
+  font-size: 32px;
+  // not sure
+  @include sans-serif;
+}

@@ -1,0 +1,21 @@
+/**
+ * @file
+ * ...
+ */
+
+.education-qualification__wrapper {
+  margin-bottom: 10px;
+  @media #{$tablet-up} {
+    @include clearfix;
+  }
+}
+.education-qualification {
+  @media #{$tablet-up} {
+    float: left;
+  }
+}
+.education-qualification__year {
+  @media #{$tablet-up} {
+    float: right;
+  }
+}

@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Mixins for the site.
+ */
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin serif {
+  font-family: 'Source Serif Pro', serif;
+}
+@mixin sans-serif {
+  font-family: 'Source Sans Pro', sans-serif;
+}

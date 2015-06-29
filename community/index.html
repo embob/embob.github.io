@@ -7,25 +7,21 @@ permalink: /Drupal/
 menu-title: Drupal
 ---
 
-<header class="header header--home clearfix" role="banner">
-  <div class="header__inner site-container">
+<header class="header" role="banner">
+  <div class="site-container">
     {% include navigation.html %}
     <div class="header__content">
-      <h1 class="huge-heading">
-        {{ page.title }}
-      </h1>
-      <h2 class="byline">
-        {{ page.byline }}
-      </h2>
+      <h1 class="huge-heading">{{ page.title }}</h1>
+      <p class="byline">in the Drupal commmunity</p>
     </div>
   </div>
 </header>
 
-<main class="main-content site-container community">
-  <div class="layout-primary-second clearfix community__section">
-    <div class="layout-primary-second__secondary">
+<main class="main-content site-container">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
       <h2>Achievements and responsibilities</h2>
-    </div>
+    </header>
     <div class="layout-primary-second__primary ">
       <ul>
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
@@ -37,43 +33,43 @@ menu-title: Drupal
         <li>Helped maked Drupal.org responsive.</li>
         <li>
     </div>
-  </div>
+  </section>
 
-  <div class="layout-primary-second clearfix community__section">
-    <div class="layout-primary-second__secondary">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
       <h2>Presentations</h2>
-    </div>
+    </header>
     <div class="layout-primary-second__primary">
       <!-- Presentation teasers -->
       {% for presentation in site.presentations reversed %}
-        <section class="speaking-teaser">
-          <p>{{ presentation.status }}</p>
-          <h3>{{ presentation.title }}</h2>
-          <p>{{ presentation.date }}</p>
-          <a href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
-          <a href="{{ presentation.slides }}">Slides</a>
-          <a href="{{ presentation.video }}">Video</a>
+        <section class="community-teaser">
+          {% if presentation.status %}
+            <p class="community-teaser__status">{{ presentation.status }}</p>
+          {% endif %}
+          <h3 class="community-teaser__title">{{ presentation.title }}</h2>
+          <p class="community-teaser__date">{{ presentation.date }}</p>
+          <a class="community-teaser__event" href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
+          <a class="community-teaser__slides" href="{{ presentation.slides }}">Slides</a>
+          <a class="community-teaser__video" href="{{ presentation.video }}">Video</a>
         </section>
       {% endfor %}
     </div>
-  </div>
+  </section>
 
-  <div class="layout-primary-second clearfix community__section">
-    <div class="layout-primary-second__secondary">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
       <h2>Blog posts</h2>
-    </div>
+    </header>
     <div class="layout-primary-second__primary">
       <!-- Article teasers -->
       {% for article in site.articles reversed %}
-        <section class="article-teaser">
-          <h3>{{ article.title }}</h2>
-          <p>{{ article.date }}</p>
-          <a href="{{ article.link }}">Read more</a>
+        <section class="community-teaser">
+          <h3 class="community-teaser__title">{{ article.title }}</h2>
+          <p class="community-teaser__date">{{ article.date }}</p>
+          <a class="community-teaser__read-more" href="{{ article.link }}">Read more</a>
         </section>
       {% endfor %}
     </div>
-  </div>
-
-
+  </section>
 
 </main>

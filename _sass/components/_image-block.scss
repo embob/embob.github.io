@@ -1,4 +1,12 @@
-.image-block img {
+/**
+ * @file
+ * Image block styles.
+ */
+
+.image-block {
+  @include clearfix;
+}
+.image-block__image {
   width: 48%;
   margin-right: 4%;
   float: left;

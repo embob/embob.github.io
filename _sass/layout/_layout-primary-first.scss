@@ -4,6 +4,11 @@
  * The first region is wider and more prominent than the second.
  */
 
+.layout-primary-first {
+  @media #{$tablet-up} {
+    @include clearfix;
+  }
+}
 .layout-primary-first__primary {
   @media #{$tablet-up} {
     float: left;

@@ -3,46 +3,44 @@ layout: default
 title: Emma Maria Karayiannis
 ---
 
-<header class="header header--home clearfix" role="banner">
-  <div class="header__inner site-container">
+<header class="header" role="banner">
+  <div class="site-container">
     {% include navigation.html %}
     <div class="header__content">
-      <h1 class="huge-heading">
-        {{ page.title }}
-      </h1>
-      <h2 class="byline">
+      <h1>{{ page.title }}</h1>
+      <p class="byline">
         Frontend developer, Drupal themer, cat content extraordinaire.
-      </h2>
+      </p>
     </div>
   </div>
 </header>
 <div class="layout-primary-first site-container">
   <main class="main-content layout-primary-first__primary">
-    <p class="intro intro--home">
+    <p class="introduction">
       Bocconcini cheese and wine chalk and cheese. Emmental cottage cheese cheesecake roquefort red leicester roquefort edam cheese slices. Cheese strings feta cheesy grin fromage frais mozzarella melted cheese monterey jack when the cheese comes out everybody's happy. Who moved my cheese taleggio cream cheese fondue bocconcini chalk and cheese fondue.
     </p>
-    <ul class="horizontal-social-links inline-links">
-      <li>
-        <a class="drupal" href="https://www.drupal.org/u/emma.maria">Drupal profile</a>
+    <ul>
+      <li class="inline-content inline-content--link">
+        <a class="horizontal-social-link horizontal-social-link--drupal" href="https://www.drupal.org/u/emma.maria">Drupal profile</a>
       </li>
-      <li>
-        <a class="mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <li class="inline-content inline-content--link">
+        <a class="horizontal-social-link horizontal-social-link--email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </li>
-      <li>
-        <a class="twitter" href="https://twitter.com/emma_maria88">Twitter profile</a>
+      <li class="inline-content inline-content--link">
+        <a class="horizontal-social-link horizontal-social-link--twitter" href="https://twitter.com/emma_maria88">Twitter profile</a>
       </li>
     </ul>
   </main>
   <aside class="layout-primary-first__secondary">
     <div class="image-block">
       <!-- me -->
-      <img src="/images/img-1.png" alt="image" height="200" width="200">
+      <img class="image-block__image" src="/images/img-1.png" alt="image">
       <!-- Bartik -->
-      <img src="/images/img-2.png" alt="image" height="200" width="200">
+      <img class="image-block__image" src="/images/img-2.png" alt="image">
       <!-- Travel picture -->
-      <img src="/images/img-3.png" alt="image" height="200" width="200">
+      <img class="image-block__image" src="/images/img-3.png" alt="image">
       <!-- Something to sum me up -->
-      <img src="/images/img-4.png" alt="image" height="200" width="200">
+      <img class="image-block__image" src="/images/img-4.png" alt="image">
     </div>
   </aside>
 </div>

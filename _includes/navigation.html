@@ -1,8 +1,8 @@
-<nav class="main-navigation header__main-navigation">
-  <a href="/">Home</a>
+<nav class="header__main-navigation">
+  <a class="main-navigation-link" href="/">Home</a>
   {% for page in site.pages %}
     {% if page.title %}
-      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu-title }}</a>
+      <a class="main-navigation-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu-title }}</a>
     {% endif %}
   {% endfor %}
 </nav>

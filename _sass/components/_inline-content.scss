@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Styles for inline content.
+ */
+
+.inline-content {
+  @media #{$tablet-up} {
+    display: inline;
+  }
+}
+.inline-content--heading {
+  @media #{$tablet-up} {
+    margin-right: 0.5em;
+  }
+}
+.inline-content--link {
+  @media #{$tablet-up} {
+    margin-right: 1em;
+  }
+}

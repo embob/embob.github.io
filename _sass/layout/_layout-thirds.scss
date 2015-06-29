@@ -1,9 +1,20 @@
 /**
  * @file
- * ...
+ * Resuable layout styles for a component with three sections.
  */
 
-.layout-thirds__first,
+.layout-thirds {
+  @media #{$tablet-up} {
+    @include clearfix;
+  }
+}
+.layout-thirds__first {
+  @media #{$tablet-up} {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+  }
+}
 .layout-thirds__second {
   @media #{$tablet-up} {
     float: left;
@@ -11,7 +22,6 @@
     margin-right: 5%;
   }
 }
-
 .layout-thirds__third {
   @media #{$tablet-up} {
     float: right;

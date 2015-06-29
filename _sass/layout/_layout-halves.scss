@@ -1,18 +1,23 @@
 /**
  * @file
- * ...
+ * Reusable layout for a component with two sections.
  */
 
+.layout-halves {
+  @media #{$tablet-up} {
+    @include clearfix;
+  }
+}
 .layout-halves__first {
   @media #{$tablet-up} {
     float: left;
-    width: 48%;
-    margin-right: 4%;
+    width: 47%;
+    margin-right: 6%;
   }
 }
-
 .layout-halves__second {
   @media #{$tablet-up} {
     float: right;
+    width: 47%;
   }
 }
