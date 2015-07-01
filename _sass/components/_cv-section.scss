@@ -4,10 +4,7 @@
  */
 
 .cv-section__title {
-  margin-bottom: 23px;
-  @media #{$tablet-up} {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 20px;
 }
 
 // Styles for the main sections of the CV.
@@ -23,12 +20,14 @@
 }
 // Styles for the sections within the main sections.
 .cv-section__sub-section {
-  margin-bottom: 23px;
-  @media #{$tablet-up} {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 1em;
   &:last-child {
     margin: 0;
   }
 }
-
+.cv-section__sub-section-title {
+  margin-bottom: 0.5em;
+  @media #{$tablet-up} {
+    margin-bottom: 0.25em;
+  }
+}

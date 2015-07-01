@@ -1,8 +1,6 @@
 <nav class="header__main-navigation">
-  <a class="main-navigation-link" href="/">Home</a>
-  {% for page in site.pages %}
-    {% if page.title %}
-      <a class="main-navigation-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menu-title }}</a>
-    {% endif %}
-  {% endfor %}
+  {% assign navurl = page.url | remove: '/' %}
+  <a class="inline-content inline-content--more-spacing{% if "index.html" == navurl %} is-active{% endif %}" href="/">Home</a>
+  <a class="inline-content inline-content--more-spacing{% if "community" == navurl %} is-active{% endif %}" href="/community">Drupal</a>
+  <a class="inline-content inline-content--more-spacing{% if "cv" == navurl %} is-active{% endif %}" href="/cv">CV</a>
 </nav>

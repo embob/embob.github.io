@@ -4,7 +4,6 @@
  */
 
 .education-qualification__wrapper {
-  margin-bottom: 10px;
   @media #{$tablet-up} {
     @include clearfix;
   }

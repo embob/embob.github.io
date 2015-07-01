@@ -21,3 +21,10 @@
     border: 1px solid lightgrey;
   }
 }
+
+.rwd-break {
+  display: block;
+  @media #{$tablet-up} {
+    display: none;
+  }
+}

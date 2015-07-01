@@ -3,6 +3,7 @@ layout: default
 title: Emma Maria Karayiannis
 permalink: /cv/
 menu-title: CV
+weight: 2
 ---
 
 <header class="header" role="banner">
@@ -12,17 +13,17 @@ menu-title: CV
       <h1>{{ page.title }}</h1>
       <div>
         <ul>
-          <li class="inline-content inline-content--link">
-            <a href="#" class="contact contact--email">emma.karayiannis@gmail.com</a>
+          <li class="inline-content inline-content--more-spacing">
+            <a href="#" class="icon-gmail contact contact--email">emma.karayiannis@gmail.com</a>
           </li>
-          <li class="inline-content inline-content--link">
-            <a href="#" class="contact contact--drupal">emma.maria</a>
+          <li class="inline-content inline-content--more-spacing">
+            <a href="#" class="icon-drupal contact contact--drupal">emma.maria</a>
           </li>
-          <li class="inline-content inline-content--link">
-            <a href="#" class="contact contact--skype">emma.karayiannis</a>
+          <li class="inline-content inline-content--more-spacing">
+            <a href="#" class="icon-skype contact contact--skype">emma.karayiannis</a>
           </li>
-          <li class="inline-content inline-content--link">
-            <a href="#" class="contact contact--telephone">+41 79 958 95 78</a>
+          <li class="inline-content inline-content--more-spacing">
+            <a href="#" class="icon-call contact contact--telephone">+41 79 958 95 78</a>
           </li>
         </ul>
       </div>
@@ -34,31 +35,33 @@ menu-title: CV
   <section class="cv-section">
     <h2 class="cv-section__title">Frontend</h2>
     <div class="cv-section__sub-section">
-      <h3 class="inline-content inline-content--heading">Languages: </h2>
+      <h3 class="inline-content inline-content--spacing">Languages: </h2>
       <p class="inline-content">HTML5, CSS3, Sass + Compass, jQuery, PHP.</p>
     </div>
     <div class="cv-section__sub-section">
-      <h3 class="inline-content inline-content--heading">Write code using: </h3>
+      <h3 class="inline-content inline-content--spacing">Write code using: </h3>
       <p class="inline-content">SMACSS, BEM, Responsive Web Design, Mobile First approach.</p>
     </div>
     <div class="cv-section__sub-section">
-      <h3 class="inline-content inline-content--heading">Interpret design using: </h3>
-      <p class="inline-content">Photoshop, Wireframes, Designing in the browser.</p>
+      <h3 class="inline-content inline-content--spacing">Interpret design using: </h3>
+      <p class="inline-content">Photoshop, Wireframes, <br class="rwd-break">Designing in the browser.</p>
     </div>
 
     <div class="cv-section__sub-section layout-halves">
       <div class="layout-halves__first ">
-        <h3>Skills to maintain code quality</h3>
+        <h3 class="cv-section__sub-section-title">
+          Skills to maintain code quality
+        </h3>
         <ul>
           <li>Visual regression testing.</li>
-          <li>Cross browser/platform/device testing.</li>
+          <li>Cross browser / platform / device testing.</li>
           <li>Aware of accessibility and usability.</li>
           <li>Follows and promotes coding standards.<li>
           <li>Keeping up to date with frontend trends and best practices.</li>
           </ul>
       </div>
       <div class="layout-halves__second">
-        <h3>Passionate about</h3>
+        <h3 class="cv-section__sub-section-title">Passionate about</h3>
         <ul>
           <li>Sass.</li>
           <li>Clean markup.</li>
@@ -76,7 +79,7 @@ menu-title: CV
 
     <div class="cv-section__sub-section layout-halves">
       <div class="layout-halves__first">
-        <h3>Drupal 7</h3>
+        <h3 class="cv-section__sub-section-title">Drupal 7</h3>
         <ul>
           <li>Creating responsive themes.</li>
           <li>Sitebuilding brochure style sites.</li>
@@ -86,7 +89,7 @@ menu-title: CV
         </ul>
       </div>
       <div class="layout-halves__second">
-        <h3>Drupal 8</h3>
+        <h3 class="cv-section__sub-section-title">Drupal 8</h3>
         <ul>
           <li>Core maintainer of the default theme Bartik.</li>
           <li>Contributing to the frontend of Core.</li>
@@ -102,7 +105,7 @@ menu-title: CV
     <h2 class="cv-section__title">Tools</h2>
     <div class="cv-section__sub-section layout-thirds">
       <div class="layout-thirds__first">
-        <h3>Project Management</h3>
+        <h3 class="cv-section__sub-section-title">Project Management</h3>
         <ul>
           <li>Jira</li>
           <li>Confluence</li>
@@ -112,7 +115,7 @@ menu-title: CV
       </div>
 
       <div class="layout-thirds__second">
-        <h3>Code</h3>
+        <h3 class="cv-section__sub-section-title">Code</h3>
         <ul>
           <li>Sublime text 2</li>
           <li>Command line</li>
@@ -123,7 +126,7 @@ menu-title: CV
       </div>
 
       <div class="layout-thirds__third">
-        <h3>Communication</h3>
+        <h3 class="cv-section__sub-section-title">Communication</h3>
         <ul>
           <li>Slack</li>
           <li>Skype</li>
@@ -136,54 +139,54 @@ menu-title: CV
 
   <section class="cv-section">
     <h2 class="cv-section__title">Employment</h2>
-    <section class="cv-section__sub-section">
-      <header>
-        <p class="employment-dates">January 2014 - Current</p>
+    <section class="employment">
+      <header class="employment__header">
+        <p class="employment__dates">January 2014 - Current</p>
         <h3>Frontend Developer</h3>
         <p>at Amazee Labs.</p>
       </header>
-      <ul>
-        <li>Creating responsive themes in Drupal 7 and 8.</li>
+      <ul class="employment__content">
+        <li>Creating responsive themes in <br class="rwd-break">Drupal 7 and 8.</li>
         <li>Assisting with sitebuilding</li>
         <li>Teaching the team about frontend and best practices.</li>
       </ul>
-      <h4 class="inline-content inline-content--heading">Projects:</h4>
+      <h4 class="inline-content inline-content--spacing">Projects:</h4>
       <p class="inline-content">
-        <a href="#" target="_blank">The Voice of Switzerland 2014</a>, <a href="#" target="_blank">Venture</a>, <a href="#" target="_blank">Sigvaris</a>, <a href="#" target="_blank">nsGroup</a>, <a href="#" target="_blank">Vetrotech</a> and <a href="#" target="_blank">Amazee Labs</a>.
+        <a href="#" target="_blank">The Voice of Switzerland 2014</a>, <a href="#" target="_blank">Venture</a>, <a href="#" target="_blank">Sigvaris</a>, <a href="#" target="_blank">nsgroup</a>, <a href="#" target="_blank">Vetrotech</a> and <a href="#" target="_blank">Amazee Labs</a>.
       </p>
     </section>
 
-    <section class="cv-section__sub-section">
-      <header>
-        <p class="employment-dates">February 2013 - December 2013</p>
+    <section class="employment">
+      <header class="employment__header">
+        <p class="employment__dates">February 2013 - December 2013</p>
         <h3>Drupal & Frontend Developer</h3>
         <p>at Precedent.</p>
       </header>
-      <ul>
+      <ul class="employment__content">
         <li>Sitebuilding and theming Drupal 7 brochure style sites.</li>
         <li>Frontend evangelist of the Drupal team.</li>
         <li>Managing client expectations and giving feedback.</li>
         <li>Providing site user training to clients.</li>
       </ul>
-      <h4 class="inline-content inline-content--heading">Projects:</h4>
+      <h4 class="inline-content inline-content--spacing">Projects:</h4>
       <p class="inline-content">
         <a href="#" target="_blank">Moorfields NHS Eye Hospital</a>, <a href="#" target="_blank">Charterhouse</a>.
       </p>
     </section>
 
-    <section class="cv-section__sub-section">
-      <header>
-        <p class="employment-dates">August 2011 - February 2013</p>
+    <section class="employment">
+      <header class="employment__header">
+        <p class="employment__dates">August 2011 - February 2013</p>
         <h3>Drupal Developer</h3>
         <p>at i-KOS.</p>
       </header>
-      <ul>
+      <ul class="employment__content">
         <li>Working on support tickets from clients.</li>
         <li>Sitebuilding and theming Drupal 7 commerce sites.</li>
         <li>Managing client expectations and providing feedback.</li>
         <li>HTML email campaigns.</li>
       </ul>
-      <h4 class="inline-content inline-content--heading">Projects:</h4>
+      <h4 class="inline-content inline-content--spacing">Projects:</h4>
       <p class="inline-content">
         <a href="" target="_blank">Krisy Kreme gifts site</a>.
       </p>
@@ -191,9 +194,9 @@ menu-title: CV
   </section>
 
   <section class="cv-section">
-    <h2>Education</h2>
-    <div class="cv-section__sub-section education">
-      <h3>Brunel University — UK</h3>
+    <h2 class="cv-section__title">Education</h2>
+    <div class="cv-section__sub-section">
+      <h3 class="cv-section__sub-section-title">Brunel University — UK</h3>
       <div class="education-qualification__wrapper">
         <p class="education-qualification">
           Interactive Computing BSc, Upper Second class honours
@@ -207,7 +210,7 @@ menu-title: CV
       </div>
     </div>
     <div class="cv-section__sub-section">
-      <h3>Chislehurst &amp; Sidcup Grammar School — UK</h3>
+      <h3 class="cv-section__sub-section-title">Chislehurst &amp; Sidcup Grammar School — UK</h3>
       <div class="education-qualification__wrapper">
         <p class="education-qualification">Three A-Levels — ICT, Mathematics, Design Technology</p>
         <p class="education-qualification__year">2004 — 2006</p>

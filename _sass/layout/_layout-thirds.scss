@@ -9,6 +9,9 @@
   }
 }
 .layout-thirds__first {
+  @media #{$mobile} {
+    margin-bottom: 1em;
+  }
   @media #{$tablet-up} {
     float: left;
     width: 30%;
@@ -16,6 +19,9 @@
   }
 }
 .layout-thirds__second {
+  @media #{$mobile} {
+    margin-bottom: 1em;
+  }
   @media #{$tablet-up} {
     float: left;
     width: 30%;

@@ -9,6 +9,9 @@
   }
 }
 .layout-halves__first {
+  @media #{$mobile} {
+    margin-bottom: 1em;
+  }
   @media #{$tablet-up} {
     float: left;
     width: 47%;

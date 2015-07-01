@@ -8,12 +8,6 @@ $tablet: "(min-width: 768px) and (max-width: 979px)";
 $tablet-up: "(min-width: 768px)";
 $desktop: "(min-width: 980px)";
 
-.wrapper {
-  @media #{$mobile} {
-    background: red;
-  }
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
@@ -31,11 +25,12 @@ $desktop: "(min-width: 980px)";
         "components/cv-section",
         "components/inline-content",
         "components/main-content",
-        "components/employment-dates",
+        "components/employment",
         "components/education-qualification",
         "components/community-section",
         "components/community-teaser",
         "components/horizontal-social-links",
+        "components/visually-hidden",
         "theme/sitewide",
         "components/footer",
         "components/main-navigation",

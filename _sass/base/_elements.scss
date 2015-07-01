@@ -3,20 +3,23 @@
  * Base element styles for the site.
  */
 
+html {
+  font-size: 16px;
+  @media #{$tablet-up} {
+    font-size: 20px;
+  }
+}
+
 body {
-  // font-family: ;
-  font-size: 125%;
-  line-height: 1.4;
   @include serif;
-  // color: ;
-  // background: ;
+
+  color: #333;
 }
 
 h1, h2, h3, h4 {
   @include sans-serif;
-  // font-family: ;
-  // font-weight ;
 }
+
 
 a {
   &:link, &:visited {
@@ -29,23 +32,34 @@ a {
   }
 }
 
-@mixin h1 {
-  font-size: 89px;
+p, ul {
+  font-size: 1rem;
+  line-height: 1.45em;
 }
+ul li {
+  @media #{$mobile} {
+    margin-bottom: 0.313em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 @mixin h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+  line-height: 1.188em;
 }
 @mixin h3 {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  line-height: 1.2em;
 }
 @mixin h4 {
-  // font-size: ;
+  font-size: 1.05rem;
+  line-height: 1.190em;
 }
 
 h1 {
-  @include h1;
+
 }
 h2 {
   @include h2;
