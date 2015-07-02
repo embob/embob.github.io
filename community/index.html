@@ -12,7 +12,7 @@ weight: 1
   <div class="site-container">
     {% include navigation.html %}
     <div class="header__content">
-      <h1 class="huge-heading">{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
       <p class="byline">in the Drupal commmunity</p>
     </div>
   </div>
@@ -48,8 +48,7 @@ weight: 1
             <p class="community-teaser__status">{{ presentation.status }}</p>
           {% endif %}
           <h3 class="community-teaser__title">{{ presentation.title }}</h2>
-          <p class="community-teaser__date">{{ presentation.date }}</p>
-          <a class="community-teaser__event" href="{{ presentation.event-link}}">{{ presentation.event-name}}</a>
+          <p class="community-teaser__event">{{ presentation.event-name}}</p>
           <a class="community-teaser__slides" href="{{ presentation.slides }}">Slides</a>
           <a class="community-teaser__video" href="{{ presentation.video }}">Video</a>
         </section>

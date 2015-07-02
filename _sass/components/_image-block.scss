@@ -5,6 +5,9 @@
 
 .image-block {
   @include clearfix;
+  // To line up with top of introduction text.
+  // TODO: convert to ems.
+  margin-top: 7px;
 }
 .image-block__image {
   width: 48%;

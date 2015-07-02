@@ -3,6 +3,8 @@
  * Styles for the Main Navigation links.
  */
 
-.main-navigation-link {
+.main-navigation {
   @include sans-serif;
+  padding: 1em 0;
 }
+

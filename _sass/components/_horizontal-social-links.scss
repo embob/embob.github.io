@@ -1,6 +1,14 @@
-.horizontal-social-links {
-  li {
-    float: left;
-    margin-right: 2%;
+/**
+ * @file
+ * ...
+ */
+
+.horizontal-social-link {
+  font-size: 2.250em;
+  display: inline-block;
+  margin-right: 0.5em;
+  //background: lightgreen;
+  &:hover {
+    text-decoration: none;
   }
 }
