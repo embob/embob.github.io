@@ -4,18 +4,18 @@
  */
 
 .site-container {
-  padding: 0 30px;
+  padding: 0 20px;
   @include clearfix;
   @media #{$tablet-up} {
-    padding: 0;
-    max-width: 980px;
+    padding: 0 30px;
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 // Is this right?
 .site-container--cv {
-  padding: 0 30px;
+  padding: 0 20px;
   background: white;
   @media #{$tablet-up} {
     padding: 0 40px;
