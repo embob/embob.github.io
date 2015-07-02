@@ -19,7 +19,11 @@ weight: 1
 </header>
 
 <main class="main-content site-container">
-  <section class="community-section">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
+      <h2>Drupal contributions</h2>
+    </header>
+    <div class="layout-primary-second__primary ">
       <ul>
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Mentoring new contributors at sprints.</li>
@@ -29,13 +33,14 @@ weight: 1
         <li>Active contributor to Drupal 8.</li>
         <li>Helped maked Drupal.org responsive.</li>
         <li>
+    </div>
   </section>
 
-
-  <div class="layout-halves community-section">
-
-    <section class="layout-halves__first">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
       <h2>Presentations</h2>
+    </header>
+    <div class="layout-primary-second__primary">
       <!-- Presentation teasers -->
       {% for presentation in site.presentations reversed %}
         <section class="community-teaser">
@@ -48,20 +53,23 @@ weight: 1
           <a class="community-teaser__video" href="{{ presentation.video }}">Video</a>
         </section>
       {% endfor %}
-    </section>
+    </div>
+  </section>
 
-    <section class="layout-halves__second">
+  <section class="layout-primary-second community-section">
+    <header class="layout-primary-second__secondary">
       <h2>Blog posts</h2>
-        <!-- Article teasers -->
-        {% for article in site.articles reversed %}
-          <section class="community-teaser">
-            <h3 class="community-teaser__title">{{ article.title }}</h2>
-            <p class="community-teaser__date">{{ article.date }}</p>
-            <a class="community-teaser__read-more" href="{{ article.link }}">Read more</a>
-          </section>
-        {% endfor %}
-    </section>
-
-  </div>
+    </header>
+    <div class="layout-primary-second__primary">
+      <!-- Article teasers -->
+      {% for article in site.articles reversed %}
+        <section class="community-teaser">
+          <h3 class="community-teaser__title">{{ article.title }}</h2>
+          <p class="community-teaser__date">{{ article.date }}</p>
+          <a class="community-teaser__read-more" href="{{ article.link }}">Read more</a>
+        </section>
+      {% endfor %}
+    </div>
+  </section>
 
 </main>
