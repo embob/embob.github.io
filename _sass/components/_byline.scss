@@ -4,7 +4,8 @@
  */
 
 .byline {
+  // TODO: check the calculations.
   font-size: 1.6em;
-  // not sure
-  @include sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
 }

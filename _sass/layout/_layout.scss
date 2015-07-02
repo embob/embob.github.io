@@ -5,6 +5,7 @@
 
 .site-container {
   padding: 0 30px;
+  @include clearfix;
   @media #{$tablet-up} {
     padding: 0;
     max-width: 980px;

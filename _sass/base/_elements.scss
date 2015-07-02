@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  @include serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background: #FFFFF0;
   color: #333;
 }
 
 h1, h2, h3, h4 {
-  @include sans-serif;
+  font-weight: 600;
 }
 
 

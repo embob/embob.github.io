@@ -1,0 +1,23 @@
+/**
+ * @file
+ * ...
+ */
+
+.teaser {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.teaser__status {
+  font-style: italic;
+}
+.teaser__link {
+  line-height: 1.45em;
+}
+.teaser__title {
+
+}
+.teaser__subtitle {
+
+}

@@ -24,7 +24,7 @@ weight: 1
       <h2>Drupal contributions</h2>
     </header>
     <div class="layout-primary-second__primary ">
-      <ul>
+      <ul class="layout-primary-second__list">
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Mentoring new contributors at sprints.</li>
         <li>Organising/hosting sprints at Camps.</li>
@@ -43,14 +43,14 @@ weight: 1
     <div class="layout-primary-second__primary">
       <!-- Presentation teasers -->
       {% for presentation in site.presentations reversed %}
-        <section class="community-teaser">
+        <section class="teaser layout-primary-second__teaser">
           {% if presentation.status %}
-            <p class="community-teaser__status">{{ presentation.status }}</p>
+            <p class="teaser__status">{{ presentation.status }}</p>
           {% endif %}
-          <h3 class="community-teaser__title">{{ presentation.title }}</h2>
-          <p class="community-teaser__event">{{ presentation.event-name}}</p>
-          <a class="community-teaser__slides" href="{{ presentation.slides }}">Slides</a>
-          <a class="community-teaser__video" href="{{ presentation.video }}">Video</a>
+          <h3 class="teaser__title">{{ presentation.title }}</h2>
+          <p class="teaser__subtitle">{{ presentation.event-name}}</p>
+          <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.slides }}">Slides</a>
+          <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.video }}">Video</a>
         </section>
       {% endfor %}
     </div>
@@ -63,10 +63,10 @@ weight: 1
     <div class="layout-primary-second__primary">
       <!-- Article teasers -->
       {% for article in site.articles reversed %}
-        <section class="community-teaser">
-          <h3 class="community-teaser__title">{{ article.title }}</h2>
-          <p class="community-teaser__date">{{ article.date }}</p>
-          <a class="community-teaser__read-more" href="{{ article.link }}">Read more</a>
+        <section class="teaser layout-primary-second__teaser">
+          <h3 class="teaser__title">{{ article.title }}</h2>
+          <p class="teaser__date">{{ article.date }}</p>
+          <a class="teaser__link" href="{{ article.link }}">Read more</a>
         </section>
       {% endfor %}
     </div>

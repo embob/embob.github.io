@@ -4,5 +4,10 @@
  */
 
 .community-section {
-  margin-bottom: 60px;
+  // TODO change to ems
+  padding: 30px 0;
+  border-top: 1px solid lightgrey;
+  &:last-child {
+    border-bottom: 1px solid lightgrey;
+  }
 }
