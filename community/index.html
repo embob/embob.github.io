@@ -26,12 +26,12 @@ weight: 1
     <div class="layout-primary-second__primary ">
       <ul class="layout-primary-second__list">
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
-        <li>Mentoring new contributors at sprints.</li>
-        <li>Organising/hosting sprints at Camps.</li>
-        <li>Organiser of Drupalcamp Brighton.</li>
-        <li>Organiser of Frontend United.</li>
-        <li>Active contributor to Drupal 8.</li>
-        <li>Helped maked Drupal.org responsive.</li>
+        <li>Mentors contributors at sprints.</li>
+        <li>Organises and hosts sprints at DrupalCamps.</li>
+        <li>Organiser of DrupalCamp Brighton.</li>
+        <li>Organiser of <a href="http://frontendunited.org/about/">Frontend United</a>.</li>
+        <li>Active contributor to <a href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria">Drupal 8 Core</a>.</li>
+        <li>Helped maked <a href="https://assoc.drupal.org/blog/tvn/drupal.org-team-week-notes-30">Drupal.org responsive.</a></li>
         <li>
     </div>
   </section>
@@ -49,8 +49,12 @@ weight: 1
           {% endif %}
           <h3 class="teaser__title">{{ presentation.title }}</h2>
           <p class="teaser__subtitle">{{ presentation.event-name}}</p>
-          <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.slides }}">Slides</a>
-          <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.video }}">Video</a>
+          {% if presentation.slides %}
+            <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.slides }}">Slides</a>
+          {% endif %}
+          {% if presentation.video %}
+            <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.video }}">Video</a>
+          {% endif %}
         </section>
       {% endfor %}
     </div>
