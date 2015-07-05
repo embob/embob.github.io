@@ -50,10 +50,10 @@ weight: 1
           <h3 class="teaser__title">{{ presentation.title }}</h2>
           <p class="teaser__subtitle">{{ presentation.event-name}}</p>
           {% if presentation.slides %}
-            <a class="teaser__link inline-content inline-content--more-spacing" href="{{ presentation.slides }}">Slides</a>
+            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}">Slides</a>
           {% endif %}
           {% if presentation.video %}
-            <a class="teaser__link inline-content inline-content--more-spacing" href="{{ presentation.video }}">Video</a>
+            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}">Video</a>
           {% endif %}
         </section>
       {% endfor %}

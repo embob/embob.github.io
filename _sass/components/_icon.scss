@@ -3,6 +3,18 @@
  * Styles for adding brand colours to the Fontello icons.
  */
 
+ .icon:hover:before {
+  transition: color 0.25s;
+ }
+
+// For icons shown with text
+.icon--before-text:before {
+  margin-right: 0.5em;
+  @media #{$tablet-up} {
+    margin-right: 0.25em;
+  }
+}
+
 // Drupal
 .icon--drupal:before {
   color: $drupal;
@@ -27,10 +39,28 @@
   color: $gmail-darken;
 }
 
-//Github
+// Github
 .icon--github-circled:before {
   color: $github;
 }
 .icon--github-circled:hover:before {
    color: $github-lighten;
 }
+
+// Skype
+.icon--skype:before {
+  color: $skype;
+}
+.icon--skype:hover:before {
+   color: $skype-darken;
+}
+
+// Call
+.icon--call:before {
+  color: $call;
+}
+.icon--call:hover:before {
+   color: $call-darken;
+}
+
+

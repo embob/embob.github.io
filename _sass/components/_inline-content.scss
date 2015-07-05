@@ -3,11 +3,16 @@
  * Styles for inline content.
  */
 
+
 .inline-content {
+  display: inline;
+}
+.inline-content--tablet-up {
   @media #{$tablet-up} {
     display: inline;
   }
 }
+
 .inline-content--spacing {
   margin-right: 0.5em;
   &:last-child {
