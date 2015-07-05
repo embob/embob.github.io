@@ -4,9 +4,10 @@
  */
 
 .header {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
   @media #{$tablet-up} {
     @include clearfix;
+    margin-bottom: 3em;
   }
 }
 

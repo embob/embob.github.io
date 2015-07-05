@@ -1,0 +1,19 @@
+/**
+ * @file
+ * ...
+ */
+
+.sentence-link {
+  &:link, &:visited {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px dotted #333;
+    text-decoration: none;
+  }
+  &:hover {
+    transition: color 0.25s, border-bottom 0.25s;
+    color: $pink;
+    text-decoration: none;
+    border-bottom: 2px dotted $pink;
+  }
+}

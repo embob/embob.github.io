@@ -9,7 +9,7 @@ weight: 1
 ---
 
 <header class="header" role="banner">
-  <div class="site-container">
+  <div class="layout-site-container">
     {% include navigation.html %}
     <div class="header__content">
       <h1>{{ page.title }}</h1>
@@ -18,10 +18,10 @@ weight: 1
   </div>
 </header>
 
-<main class="main-content site-container">
+<main class="main-content layout-site-container">
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
-      <h2>Drupal contributions</h2>
+      <h2 class="community-section__title">Drupal contributions</h2>
     </header>
     <div class="layout-primary-second__primary ">
       <ul class="layout-primary-second__list">
@@ -29,16 +29,16 @@ weight: 1
         <li>Mentors contributors at sprints.</li>
         <li>Organises and hosts sprints at DrupalCamps.</li>
         <li>Organiser of DrupalCamp Brighton.</li>
-        <li>Organiser of <a href="http://frontendunited.org/about/">Frontend United</a>.</li>
-        <li>Active contributor to <a href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria">Drupal 8 Core</a>.</li>
-        <li>Helped maked <a href="https://assoc.drupal.org/blog/tvn/drupal.org-team-week-notes-30">Drupal.org responsive.</a></li>
+        <li>Organiser of <a class="sentence-link" href="http://frontendunited.org/about/">Frontend United</a>.</li>
+        <li>Active contributor to <a class="sentence-link" href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria">Drupal 8 Core</a>.</li>
+        <li>Helped make <a class="sentence-link" href="https://assoc.drupal.org/blog/tvn/drupal.org-team-week-notes-30">Drupal.org responsive.</a></li>
         <li>
     </div>
   </section>
 
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
-      <h2>Presentations</h2>
+      <h2 class="community-section__title">Presentations</h2>
     </header>
     <div class="layout-primary-second__primary">
       <!-- Presentation teasers -->
@@ -50,10 +50,10 @@ weight: 1
           <h3 class="teaser__title">{{ presentation.title }}</h2>
           <p class="teaser__subtitle">{{ presentation.event-name}}</p>
           {% if presentation.slides %}
-            <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.slides }}">Slides</a>
+            <a class="teaser__link inline-content inline-content--more-spacing" href="{{ presentation.slides }}">Slides</a>
           {% endif %}
           {% if presentation.video %}
-            <a class="teaser__link inline-content inline-content--spacing" href="{{ presentation.video }}">Video</a>
+            <a class="teaser__link inline-content inline-content--more-spacing" href="{{ presentation.video }}">Video</a>
           {% endif %}
         </section>
       {% endfor %}
@@ -62,7 +62,7 @@ weight: 1
 
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
-      <h2>Blog posts</h2>
+      <h2 class="community-section__title">Blog posts</h2>
     </header>
     <div class="layout-primary-second__primary">
       <!-- Article teasers -->

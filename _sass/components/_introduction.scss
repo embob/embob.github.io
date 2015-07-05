@@ -6,6 +6,9 @@
 .introduction {
   font-size: 1.25rem;
   line-height: 1.55em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+  @media #{$tablet-up} {
+    margin-bottom: 1.5em;
+  }
 }
 

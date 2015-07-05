@@ -5,32 +5,32 @@
 
 // Drupal
 .icon--drupal:before {
-  color: #0074bd;
+  color: $drupal;
 }
 .icon--drupal:hover:before {
-  color: #005BA4; // Darken 20%
+  color: $drupal-darken;
 }
 
 // Twitter
 .icon--twitter:before {
-  color: #55acee;
+  color: $twitter;
 }
 .icon--twitter:hover:before {
-  color: #2279BB; // Darken 20%
+  color: $twitter-darken;
 }
 
 // Gmail
 .icon--gmail:before {
-  color: #dd4b39;
+  color: $gmail;
 }
 .icon--gmail:hover:before {
-  color: #AA1806; // Darken 20%
+  color: $gmail-darken;
 }
 
 //Github
 .icon--github-circled:before {
-  color: #333333;
+  color: $github;
 }
 .icon--github-circled:hover:before {
-  color: #666666; // Lighten 20%
+   color: $github-lighten;
 }

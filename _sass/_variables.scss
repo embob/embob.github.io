@@ -1,0 +1,17 @@
+/**
+ * @file
+ * ...
+ */
+
+$pink: #FF6666;
+
+$gmail: #dd4b39;
+$twitter: #55acee;
+$drupal: #0074bd;
+$github: #333333;
+
+
+$gmail-darken: darken($gmail, 25%);
+$twitter-darken: darken($twitter, 25%);
+$drupal-darken: darken($drupal, 25%);
+$github-lighten: lighten($github, 25%);

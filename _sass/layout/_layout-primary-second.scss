@@ -22,9 +22,16 @@
     width: 65%;
   }
 }
+
+// To horizontally align the headings on the left with the content on the right.
+
 .layout-primary-second__list {
-  margin-top: 8px;
+  @media #{$tablet-up} {
+    margin-top: 8px;
+  }
 }
 .layout-primary-second__teaser {
-  margin-top: 6px;
+  @media #{$tablet-up} {
+    margin-top: 6px;
+  }
 }

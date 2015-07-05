@@ -5,11 +5,17 @@
  */
 
 .layout-primary-first {
+  @media #{$mobile} {
+    margin-bottom: 1.875em;
+  }
   @media #{$tablet-up} {
     @include clearfix;
   }
 }
 .layout-primary-first__primary {
+  @media #{$mobile} {
+    margin-bottom: 1.875em;
+  }
   @media #{$tablet-up} {
     float: left;
     width: 65%;

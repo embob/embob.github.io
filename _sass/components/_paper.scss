@@ -1,0 +1,11 @@
+/**
+ * @file
+ * ...
+ */
+
+.paper {
+  @media #{$tablet-up} {
+    background: white;
+    border: 1px solid lightgrey;
+  }
+}

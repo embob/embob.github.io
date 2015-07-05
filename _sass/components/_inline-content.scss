@@ -9,30 +9,21 @@
   }
 }
 .inline-content--spacing {
-  @media #{$mobile} {
-    margin-bottom: 0.5em;
-  }
-  @media #{$tablet-up} {
-    margin-right: 0.5em;
-    &:last-child {
-      margin-right: 0;
-    }
+  margin-right: 0.5em;
+  &:last-child {
+    margin-right: 0;
   }
 }
 .inline-content--more-spacing {
-  @media #{$tablet-up} {
-    margin-right: 1em;
-    &:last-child {
-      margin-right: 0;
-    }
+  margin-right: 1em;
+  &:last-child {
+    margin-right: 0;
   }
 }
 .inline-content--much-more-spacing {
-  @media #{$tablet-up} {
-    margin-right: 1.5em;
-    &:last-child {
-      margin-right: 0;
-    }
+  margin-right: 1.5em;
+  &:last-child {
+    margin-right: 0;
   }
 }
 

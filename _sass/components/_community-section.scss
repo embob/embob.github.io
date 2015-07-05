@@ -11,3 +11,8 @@
     border-bottom: 1px solid lightgrey;
   }
 }
+.community-section__title {
+  @media #{$mobile} {
+    margin-bottom: 0.859em;
+  }
+}

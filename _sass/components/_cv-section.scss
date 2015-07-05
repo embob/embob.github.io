@@ -18,6 +18,12 @@
     border-bottom: 0;
   }
 }
+.cv-section--header {
+  @media #{$mobile} {
+    padding-top: 0;
+  }
+}
+
 // Styles for the sections within the main sections.
 .cv-section__sub-section {
   margin-bottom: 1em;
