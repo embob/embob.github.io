@@ -27,11 +27,11 @@
 
 .layout-primary-second__list {
   @media #{$tablet-up} {
-    margin-top: 8px;
+    margin-top: em(8);
   }
 }
 .layout-primary-second__teaser {
   @media #{$tablet-up} {
-    margin-top: 6px;
+    margin-top: em(6);
   }
 }

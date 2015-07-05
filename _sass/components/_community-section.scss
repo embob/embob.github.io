@@ -4,8 +4,7 @@
  */
 
 .community-section {
-  // TODO change to ems
-  padding: 30px 0;
+  padding: em(30) 0;
   border-top: 1px solid lightgrey;
   &:last-child {
     border-bottom: 1px solid lightgrey;
@@ -13,6 +12,6 @@
 }
 .community-section__title {
   @media #{$mobile} {
-    margin-bottom: 0.859em;
+    margin-bottom: em(28,32);
   }
 }

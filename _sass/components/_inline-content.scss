@@ -3,7 +3,6 @@
  * Styles for inline content.
  */
 
-
 .inline-content {
   display: inline;
 }
@@ -12,21 +11,20 @@
     display: inline;
   }
 }
-
 .inline-content--spacing {
-  margin-right: 0.5em;
+  margin-right: em(10);
   &:last-child {
     margin-right: 0;
   }
 }
 .inline-content--more-spacing {
-  margin-right: 1em;
+  margin-right: em(20);
   &:last-child {
     margin-right: 0;
   }
 }
 .inline-content--much-more-spacing {
-  margin-right: 1.5em;
+  margin-right: em(30);
   &:last-child {
     margin-right: 0;
   }

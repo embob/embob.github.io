@@ -3,19 +3,18 @@
  * ...
  */
 .employment {
-  margin-bottom: 30px;
+  margin-bottom: em(30);
   &:last-child {
     margin-bottom: 0;
   }
 }
 .employment__header {
-  margin-bottom: 5px;
+  margin-bottom: em(5);
 }
 .employment__content {
-  margin-bottom: 5px;
+  margin-bottom: em(5);
 }
 .employment__dates {
-  line-height: 1.7em;
   @media #{$tablet-up} {
     float: right;
   }

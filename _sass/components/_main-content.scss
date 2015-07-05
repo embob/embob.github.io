@@ -4,8 +4,8 @@
  */
 
 .main-content {
-  margin-bottom: 60px;
+  margin-bottom: em(60);
   @media #{$tablet-up} {
-    margin-bottom: 80px;
+    margin-bottom: em(80);
   }
 }

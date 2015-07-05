@@ -3,15 +3,16 @@
  * ...
  */
 
+// H2
 .cv-section__title {
-  margin-bottom: 20px;
+  margin-bottom: em(20, 32);
 }
 
 // Styles for the main sections of the CV.
 .cv-section {
-  padding: 30px 0;
+  padding: em(30) 0;
   @media #{$tablet-up} {
-    padding: 40px 0;
+    padding: em(40) 0;
   }
   border-bottom: 1px solid lightgrey;
   &:last-child {
@@ -26,14 +27,14 @@
 
 // Styles for the sections within the main sections.
 .cv-section__sub-section {
-  margin-bottom: 1em;
+  margin-bottom: em(20);
   &:last-child {
     margin: 0;
   }
 }
 .cv-section__sub-section-title {
-  margin-bottom: 0.5em;
+  margin-bottom: em(10,25);
   @media #{$tablet-up} {
-    margin-bottom: 0.25em;
+    margin-bottom: em(5,25);
   }
 }

@@ -4,8 +4,7 @@
  */
 
 .byline {
-  // TODO: check the calculations.
-  font-size: 1.6em;
+  font-size: em(32);
+  line-height: em(38,32);
   font-weight: 600;
-  line-height: 1.3em;
 }

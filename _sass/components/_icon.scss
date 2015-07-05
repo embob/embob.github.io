@@ -9,9 +9,9 @@
 
 // For icons shown with text
 .icon--before-text:before {
-  margin-right: 0.5em;
+  margin-right: em(10);
   @media #{$tablet-up} {
-    margin-right: 0.25em;
+    margin-right: em(5);
   }
 }
 

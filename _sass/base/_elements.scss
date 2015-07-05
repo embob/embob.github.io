@@ -3,23 +3,17 @@
  * Base element styles for the site.
  */
 
-html {
-  font-size: 16px;
-  @media #{$tablet-up} {
-    font-size: 20px;
-  }
-}
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #FFFFF0;
   color: #333;
+  @media #{$tablet-up} {
+    font-size: em(20, 16);
+  }
 }
-
 h1, h2, h3, h4 {
   font-weight: 600;
 }
-
 a {
   &:link, &:visited {
     text-decoration: none;
@@ -30,36 +24,39 @@ a {
     border-bottom: 2px solid $pink;
   }
 }
-
 p, ul {
-  font-size: 1rem;
-  line-height: 1.45em;
+  font-size: em(20);
+  line-height: em(28);
 }
 ul li {
   @media #{$mobile} {
-    margin-bottom: 0.313em;
+    margin-bottom: em(6);
     &:last-child {
       margin: 0;
     }
   }
 }
 
+// Heading styles
+h1 {
+  font-size: em(80);
+  margin-left: em(-4, 80);
+  // To help out fittext.
+  @media #{$tablet-up} {
+    white-space: nowrap;
+  }
+}
 @mixin h2 {
-  font-size: 1.6rem;
-  line-height: 1.188em;
+  font-size: em(32);
+  line-height: em(36,32);
 }
 @mixin h3 {
-  font-size: 1.25rem;
-  line-height: 1.2em;
+  font-size: em(25);
+  line-height: em(30, 25);
 }
 @mixin h4 {
-  font-size: 1.05rem;
-  line-height: 1.190em;
-}
-
-h1 {
-  font-size: 80px;
-  margin-left: -0.05em;
+  font-size: em(20);
+  line-height: em(24, 20);
 }
 h2 {
   @include h2;
@@ -70,6 +67,4 @@ h3 {
 h4 {
   @include h4;
 }
-
-
 
