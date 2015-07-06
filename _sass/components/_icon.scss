@@ -3,9 +3,9 @@
  * Styles for adding brand colours to the Fontello icons.
  */
 
- .icon:hover:before {
+.icon:hover:before {
   transition: color 0.25s;
- }
+}
 
 // For icons shown with text
 .icon--before-text:before {
@@ -62,5 +62,3 @@
 .icon--call:hover:before {
    color: $call-darken;
 }
-
-

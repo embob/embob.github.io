@@ -3,7 +3,6 @@
  * ...
  */
 
-
 .layout-site-container {
   padding: 0 20px;
   @include clearfix;
@@ -17,7 +16,7 @@
 .layout-site-container--cv {
   @media #{$tablet-up} {
     padding: 0 40px;
-    background: white;
-    border: 1px solid lightgrey;
+    background: $white;
+    border: 1px solid $lightgrey;
   }
 }

@@ -3,8 +3,8 @@
  * ...
  */
 
-// H2
 .cv-section__title {
+  font-size: em(32);
   margin-bottom: em(20, 32);
 }
 
@@ -14,7 +14,7 @@
   @media #{$tablet-up} {
     padding: em(40) 0;
   }
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $lightgrey;
   &:last-child {
     border-bottom: 0;
   }
@@ -33,6 +33,7 @@
   }
 }
 .cv-section__sub-section-title {
+  font-size: em(25);
   margin-bottom: em(5,25);
   @media #{$tablet-up} {
     margin-bottom: em(5,25);

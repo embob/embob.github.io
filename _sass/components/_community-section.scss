@@ -5,13 +5,14 @@
 
 .community-section {
   padding: em(30) 0;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $lightgrey;
   &:last-child {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid $lightgrey;
   }
 }
 .community-section__title {
   @media #{$mobile} {
+    font-size: em(32);
     margin-bottom: em(28,32);
   }
 }

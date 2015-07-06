@@ -10,7 +10,7 @@ body {
   margin-bottom: em(60);
   @media #{$tablet-up} {
     font-size: em(20, 16);
-     margin-bottom: em(80);
+    margin-bottom: em(80);
   }
 }
 h1, h2, h3, h4 {
@@ -48,15 +48,16 @@ ul li {
 
 // Heading styles
 h1 {
-  font-size: 50px;
-  margin-left: em(-4, 80);
+  font-size: em(50);
+  margin-left: em(-2, 50);
   @media #{$tablet-up} {
     font-size: em(80);
+    margin-left: em(-4, 80);
   }
 }
 @mixin h2 {
   font-size: em(32);
-  line-height: em(36,32);
+  line-height: em(36, 32);
 }
 @mixin h3 {
   font-size: em(25);
@@ -75,4 +76,3 @@ h3 {
 h4 {
   @include h4;
 }
-
