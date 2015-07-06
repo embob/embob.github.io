@@ -6,7 +6,8 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #FFFFF0;
-  color: #333;
+  //color: #300018;
+  color: #41364d;
   margin-bottom: em(60);
   @media #{$tablet-up} {
     font-size: em(20, 16);
@@ -19,11 +20,11 @@ h1, h2, h3, h4 {
 a {
   &:link, &:visited {
     text-decoration: none;
-    color: $pink;
+    color: $seagreen;
   }
   &:hover {
     transition: border-bottom 0.25s;
-    border-bottom: 2px solid $pink;
+    border-bottom: 2px solid $seagreen;
   }
 }
 p {

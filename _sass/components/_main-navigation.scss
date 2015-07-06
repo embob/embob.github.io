@@ -12,5 +12,6 @@
   font-size: em(22);
 }
 .main-navigation__link.is-active {
+  color: $pink;
   border-bottom: 2px solid $pink;
 }
