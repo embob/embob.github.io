@@ -21,6 +21,7 @@ a {
   &:link, &:visited {
     text-decoration: none;
     color: $seagreen;
+    font-weight: 600;
   }
   &:hover {
     transition: border-bottom 0.25s;
