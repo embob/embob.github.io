@@ -7,7 +7,7 @@
   margin-bottom: em(30);
 }
 .header--homepage {
-  @media #{$tablet-up} {
+  @media (min-width: 1024px) {
     @include clearfix;
     margin-bottom: em(60);
   }
