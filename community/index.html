@@ -18,7 +18,7 @@ weight: 1
   </div>
 </header>
 
-<main class="main-content layout-site-container">
+<main class="layout-site-container">
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
       <h2 class="community-section__title">Drupal contributions</h2>
@@ -43,7 +43,7 @@ weight: 1
     <div class="layout-primary-second__primary">
       <!-- Presentation teasers -->
       {% for presentation in site.presentations reversed %}
-        <section class="teaser layout-primary-second__teaser">
+        <article class="teaser layout-primary-second__teaser">
           {% if presentation.status %}
             <p class="teaser__status">{{ presentation.status }}</p>
           {% endif %}
@@ -55,7 +55,7 @@ weight: 1
           {% if presentation.video %}
             <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}">Video</a>
           {% endif %}
-        </section>
+        </article>
       {% endfor %}
     </div>
   </section>
@@ -67,11 +67,11 @@ weight: 1
     <div class="layout-primary-second__primary">
       <!-- Article teasers -->
       {% for article in site.articles reversed %}
-        <section class="teaser layout-primary-second__teaser">
+        <article class="teaser layout-primary-second__teaser">
           <h3 class="teaser__title">{{ article.title }}</h2>
           <p class="teaser__date"><time>{{ article.date }}</time></p>
           <a class="teaser__link" href="{{ article.link }}">Read more</a>
-        </section>
+        </article>
       {% endfor %}
     </div>
   </section>

@@ -7,8 +7,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #FFFFF0;
   color: #333;
+  margin-bottom: em(60);
   @media #{$tablet-up} {
     font-size: em(20, 16);
+     margin-bottom: em(80);
   }
 }
 h1, h2, h3, h4 {
@@ -24,7 +26,14 @@ a {
     border-bottom: 2px solid $pink;
   }
 }
-p, ul {
+p {
+  @media #{$mobile} {
+    line-height: em(32);
+  }
+  font-size: em(20);
+  line-height: em(28);
+}
+ul {
   font-size: em(20);
   line-height: em(28);
 }
@@ -39,11 +48,10 @@ ul li {
 
 // Heading styles
 h1 {
-  font-size: em(80);
+  font-size: 50px;
   margin-left: em(-4, 80);
-  // To help out fittext.
   @media #{$tablet-up} {
-    white-space: nowrap;
+    font-size: em(80);
   }
 }
 @mixin h2 {

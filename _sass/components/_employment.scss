@@ -2,20 +2,26 @@
  * @file
  * ...
  */
+
 .employment {
-  margin-bottom: em(30);
+  margin-bottom: em(40);
   &:last-child {
     margin-bottom: 0;
   }
+  @media #{$tablet-up} {
+    position: relative;
+  }
 }
 .employment__header {
-  margin-bottom: em(5);
+  margin-bottom: em(10);
 }
 .employment__content {
-  margin-bottom: em(5);
+  margin-bottom: em(10);
 }
 .employment__dates {
   @media #{$tablet-up} {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

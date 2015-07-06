@@ -5,11 +5,15 @@
 
 .header {
   margin-bottom: em(30);
+}
+.homepage-header {
+  margin-bottom: em(30);
   @media #{$tablet-up} {
     @include clearfix;
     margin-bottom: em(60);
   }
 }
+
 .header__content {
   clear: both;
 }

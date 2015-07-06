@@ -4,8 +4,10 @@
  */
 
 .education-qualification__wrapper {
+  margin-bottom: em(10);
   @media #{$tablet-up} {
     @include clearfix;
+    margin-bottom: em(5);
   }
 }
 .education-qualification {
