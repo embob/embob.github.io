@@ -14,7 +14,7 @@
 }
 .layout-primary-first__primary {
   @media (min-width: 0px) and (max-width: 1023px) {
-    margin-bottom: em(30);
+    margin-bottom: em(30, 16);
   }
   @media (min-width: 1024px) {
     float: left;
