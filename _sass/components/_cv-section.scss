@@ -11,9 +11,6 @@
 // Styles for the main sections of the CV.
 .cv-section {
   padding: em(30) 0;
-  @media #{$tablet-up} {
-    padding: em(40) 0;
-  }
   border-bottom: 1px solid $lightgrey;
   &:last-child {
     border-bottom: 0;
