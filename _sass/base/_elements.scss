@@ -18,7 +18,12 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 a {
-  &:link, &:visited {
+  &:link {
+    text-decoration: none;
+    color: $seagreen;
+    font-weight: 600;
+  }
+  &:visited {
     text-decoration: none;
     color: $seagreen;
     font-weight: 600;

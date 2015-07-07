@@ -4,7 +4,14 @@
  */
 
 .sentence-link {
-  &:link, &:visited {
+  &:link {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px dotted #333;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  &:visited {
     text-decoration: none;
     color: inherit;
     border-bottom: 2px dotted #333;

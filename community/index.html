@@ -46,11 +46,11 @@ weight: 1
             <p class="teaser__status">{{ presentation.status }}</p>
             <p>{{ presentation.date }}</p>
           {% endif %}
-          <h3 class="teaser__title">{{ presentation.title }}</h3>
+          <h3>{{ presentation.title }}</h3>
           {% if presentation.status %}
             <a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a>
           {% else %}
-            <p class="teaser__subtitle">{{ presentation.event-name }}</p>
+            <p>{{ presentation.event-name }}</p>
           {% endif %}
           {% if presentation.slides %}
             <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
@@ -69,8 +69,8 @@ weight: 1
     <div class="layout-primary-second__primary">
       {% for article in site.articles reversed %}
         <article class="teaser layout-primary-second__teaser">
-          <h3 class="teaser__title">{{ article.title }}</h3>
-          <p class="teaser__date"><time>{{ article.date }}</time></p>
+          <h3>{{ article.title }}</h3>
+          <p><time>{{ article.date }}</time></p>
           <a class="teaser__link" href="{{ article.link }}" target="_blank">Read more</a>
         </article>
       {% endfor %}
