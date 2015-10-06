@@ -1,8 +1,7 @@
 /**
  * @file
- * ...
+ * The site container layout.
  */
-
 
 .layout-site-container {
   padding: 0 20px;
@@ -16,8 +15,10 @@
 }
 .layout-site-container--cv {
   @media #{$tablet-up} {
+    max-width: 980px;
     padding: 0 40px;
-    background: white;
-    border: 1px solid lightgrey;
+  }
+  @media (min-width: 768px) and (max-width: 1040px) {
+    margin: 0 30px;
   }
 }

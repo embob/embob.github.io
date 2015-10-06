@@ -1,14 +1,15 @@
 /**
  * @file
- * Styles for adding brand colours to the Fontello icons.
+ * Styles for the Fontello icons + icon branding colors.
  */
 
- .icon:hover:before {
+.icon:hover:before {
   transition: color 0.25s;
- }
+}
 
 // For icons shown with text
 .icon--before-text:before {
+  width: 30px;
   margin-right: em(10);
   @media #{$tablet-up} {
     margin-right: em(5);
@@ -62,5 +63,3 @@
 .icon--call:hover:before {
    color: $call-darken;
 }
-
-

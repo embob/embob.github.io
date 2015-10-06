@@ -6,24 +6,31 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #FFFFF0;
-  color: #333;
+  //color: #300018;
+  color: #41364d;
   margin-bottom: em(60);
   @media #{$tablet-up} {
     font-size: em(20, 16);
-     margin-bottom: em(80);
+    margin-bottom: em(80);
   }
 }
 h1, h2, h3, h4 {
   font-weight: 600;
 }
 a {
-  &:link, &:visited {
+  &:link {
     text-decoration: none;
-    color: $pink;
+    color: $seagreen;
+    font-weight: 600;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $seagreen;
+    font-weight: 600;
   }
   &:hover {
     transition: border-bottom 0.25s;
-    border-bottom: 2px solid $pink;
+    border-bottom: 2px solid $seagreen;
   }
 }
 p {
@@ -48,15 +55,20 @@ ul li {
 
 // Heading styles
 h1 {
-  font-size: 50px;
-  margin-left: em(-4, 80);
+  font-size: em(52, 16);
+  margin-left: em(-2, 52);
   @media #{$tablet-up} {
-    font-size: em(80);
+    font-size: em(66);
+    margin-left: em(-3, 66);
+  }
+  @media (min-width: 1024px) {
+    font-size: em(90);
+    margin-left: em(-6, 90);
   }
 }
 @mixin h2 {
   font-size: em(32);
-  line-height: em(36,32);
+  line-height: em(36, 32);
 }
 @mixin h3 {
   font-size: em(25);
@@ -75,4 +87,3 @@ h3 {
 h4 {
   @include h4;
 }
-

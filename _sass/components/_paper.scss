@@ -1,11 +1,11 @@
 /**
  * @file
- * ...
+ * Styles to apply the Paper design component.
  */
 
 .paper {
   @media #{$tablet-up} {
-    background: white;
-    border: 1px solid lightgrey;
+    background: $white;
+    border: 1px solid $lightgrey;
   }
 }

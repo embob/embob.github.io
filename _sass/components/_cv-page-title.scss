@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Styles for the CV page title.
+ */
+
+.cv-page-title {
+  @media #{$tablet-up} {
+    font-size: em(58);
+  }
+  @media (min-width: 1024px) {
+    font-size: em(82);
+  }
+}

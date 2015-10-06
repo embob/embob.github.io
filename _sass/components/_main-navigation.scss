@@ -4,11 +4,14 @@
  */
 
 .main-navigation {
-  padding: em(20) 0;
+  padding: em(20) 0 em(30);
   float: right;
   font-weight: 600;
 }
-.main-navigation__is-active {
+.main-navigation__link {
+  font-size: em(22);
+}
+.main-navigation__link.is-active {
+  color: $pink;
   border-bottom: 2px solid $pink;
 }
-

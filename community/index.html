@@ -17,63 +17,63 @@ weight: 1
     </div>
   </div>
 </header>
-
 <main class="layout-site-container">
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
       <h2 class="community-section__title">Drupal contributions</h2>
     </header>
-    <div class="layout-primary-second__primary ">
+    <div class="layout-primary-second__primary">
       <ul class="layout-primary-second__list">
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Mentors contributors at sprints.</li>
         <li>Organises and hosts sprints at DrupalCamps.</li>
-        <li>Organiser of DrupalCamp Brighton.</li>
-        <li>Organiser of <a class="sentence-link" href="http://frontendunited.org/about/">Frontend United</a>.</li>
-        <li>Active contributor to <a class="sentence-link" href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria">Drupal 8 Core</a>.</li>
-        <li>Helped make <a class="sentence-link" href="https://assoc.drupal.org/blog/tvn/drupal.org-team-week-notes-30">Drupal.org responsive.</a></li>
+        <li>Organiser of DrupalCamp Brighton 2015.</li>
+        <li>Organiser of <a class="sentence-link" href="http://frontendunited.org/about/" target="_blank">Frontend United 2015</a>.</li>
+        <li>Active contributor to <a class="sentence-link" href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria" target="_blank">Drupal 8 Core</a>.</li>
+        <li>Helped make <a class="sentence-link" href="https://assoc.drupal.org/blog/tvn/drupal.org-team-week-notes-30" target="_blank">Drupal.org responsive.</a></li>
         <li>
+      </ul>
     </div>
   </section>
-
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
       <h2 class="community-section__title">Presentations</h2>
     </header>
     <div class="layout-primary-second__primary">
-      <!-- Presentation teasers -->
       {% for presentation in site.presentations reversed %}
         <article class="teaser layout-primary-second__teaser">
           {% if presentation.status %}
             <p class="teaser__status">{{ presentation.status }}</p>
+            <p>{{ presentation.date }}</p>
           {% endif %}
-          <h3 class="teaser__title">{{ presentation.title }}</h2>
-          <p class="teaser__subtitle">{{ presentation.event-name}}</p>
+          <h3>{{ presentation.title }}</h3>
+          {% if presentation.status %}
+            <a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a>
+          {% else %}
+            <p>{{ presentation.event-name }}</p>
+          {% endif %}
           {% if presentation.slides %}
-            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}">Slides</a>
+            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
           {% endif %}
           {% if presentation.video %}
-            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}">Video</a>
+            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}" target="_blank">Video</a>
           {% endif %}
         </article>
       {% endfor %}
     </div>
   </section>
-
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
       <h2 class="community-section__title">Blog posts</h2>
     </header>
     <div class="layout-primary-second__primary">
-      <!-- Article teasers -->
       {% for article in site.articles reversed %}
         <article class="teaser layout-primary-second__teaser">
-          <h3 class="teaser__title">{{ article.title }}</h2>
-          <p class="teaser__date"><time>{{ article.date }}</time></p>
-          <a class="teaser__link" href="{{ article.link }}">Read more</a>
+          <h3>{{ article.title }}</h3>
+          <p><time>{{ article.date }}</time></p>
+          <a class="teaser__link" href="{{ article.link }}" target="_blank">Read more</a>
         </article>
       {% endfor %}
     </div>
   </section>
-
 </main>

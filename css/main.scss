@@ -3,6 +3,7 @@
 ---
 @charset "utf-8";
 
+// Breakpoint variables
 $mobile: "(min-width: 0px) and (max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 979px)";
 $tablet-up: "(min-width: 768px)";
@@ -10,34 +11,33 @@ $desktop: "(min-width: 980px)";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "mixins",
-        "variables",
-        "functions",
-        "base/reset",
-        "base/elements",
-        "layout/layout-site-container",
-        "layout/layout-primary-first",
-        "layout/layout-primary-second",
-        "layout/layout-halves",
-        "layout/layout-thirds",
-        "components/header",
-        "components/byline",
-        "components/introduction",
-        "components/contact-block",
-        "components/cv-section",
-        "components/inline-content",
-        "components/employment",
-        "components/icon",
-        "components/sentence-link",
-        "components/education-qualification",
-        "components/community-section",
-        "components/teaser",
-        "components/horizontal-social-links",
-        "components/visually-hidden",
-        "components/paper",
-        "components/rwd-break",
-        "theme/sitewide",
-        "components/footer",
-        "components/main-navigation",
-        "components/image-block"
+  "mixins",
+  "variables",
+  "functions",
+  "base/reset",
+  "base/elements",
+  "layout/layout-site-container",
+  "layout/layout-primary-first",
+  "layout/layout-primary-second",
+  "layout/layout-halves",
+  "layout/layout-thirds",
+  "components/byline",
+  "components/community-section",
+  "components/contact-block",
+  "components/cv-page-title",
+  "components/cv-section",
+  "components/education-qualification",
+  "components/employment",
+  "components/header",
+  "components/horizontal-social-links",
+  "components/icon",
+  "components/image-block",
+  "components/inline-content",
+  "components/introduction",
+  "components/main-navigation",
+  "components/paper",
+  "components/rwd-break",
+  "components/sentence-link",
+  "components/teaser",
+  "components/visually-hidden"
 ;

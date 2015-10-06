@@ -1,20 +1,17 @@
 /**
  * @file
- * ...
+ * Styles for the content sections on the CV page.
  */
 
-// H2
 .cv-section__title {
+  font-size: em(32);
   margin-bottom: em(20, 32);
 }
 
 // Styles for the main sections of the CV.
 .cv-section {
   padding: em(30) 0;
-  @media #{$tablet-up} {
-    padding: em(40) 0;
-  }
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $lightgrey;
   &:last-child {
     border-bottom: 0;
   }
@@ -33,6 +30,7 @@
   }
 }
 .cv-section__sub-section-title {
+  font-size: em(25);
   margin-bottom: em(5,25);
   @media #{$tablet-up} {
     margin-bottom: em(5,25);
