@@ -18,12 +18,11 @@ weight: 1
   </div>
 </header>
 <main class="layout-site-container">
-  <section class="layout-primary-second community-section">
-    <header class="layout-primary-second__secondary">
-      <h2 class="community-section__title">Drupal contributions</h2>
-    </header>
-    <div class="layout-primary-second__primary">
-      <ul class="layout-primary-second__list">
+  <section class="community-section">
+    <!-- <header class="layout-primary-second__secondary"> -->
+     <!--  <h2 class="community-section__title visually-hidden">Drupal contributions</h2> -->
+    <!-- </header> -->
+      <ul class="contibutions-list">
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Mentors contributors at sprints.</li>
         <li>Organises and hosts sprints at DrupalCamps.</li>
@@ -37,7 +36,7 @@ weight: 1
   </section>
   <section class="layout-primary-second community-section">
     <header class="layout-primary-second__secondary">
-      <h2 class="community-section__title">Presentations</h2>
+      <h2 class="community-section__title">Speaking</h2>
     </header>
     <div class="layout-primary-second__primary">
       {% for presentation in site.presentations reversed %}
@@ -69,7 +68,7 @@ weight: 1
     <div class="layout-primary-second__primary">
       {% for article in site.articles reversed %}
         <article class="teaser layout-primary-second__teaser">
-          <h3>{{ article.title }}</h3>
+          <h3><a class="teaser__link" href="{{ article.link }}" target="_blank">{{ article.title }}</a></h3>
           <p><time>{{ article.date }}</time></p>
           <a class="teaser__link" href="{{ article.link }}" target="_blank">Read more</a>
         </article>
