@@ -18,12 +18,12 @@ weight: 1
   </div>
 </header>
 <main class="layout-site-container">
-  <section class="layout-primary-second community-section">
-    <header class="layout-primary-second__secondary">
+  <section class="community-section">
+    <header class="">
       <h2 class="community-section__title">Drupal contributions</h2>
     </header>
-    <div class="layout-primary-second__primary">
-      <ul class="layout-primary-second__list">
+    <div class="">
+      <ul class="">
         <li>Active contributor to <a class="sentence-link" href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria" target="_blank">Drupal 8 Core</a>.</li>
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Sprint mentor at DrupalCons and DrupalCamps</li>
@@ -34,13 +34,13 @@ weight: 1
       </ul>
     </div>
   </section>
-  <section class="layout-primary-second community-section">
-    <header class="layout-primary-second__secondary">
+  <section class="community-section">
+    <header class="">
       <h2 class="community-section__title">Speaking</h2>
     </header>
-    <div class="layout-primary-second__primary">
+    <div class="">
       {% for presentation in site.presentations reversed %}
-        <article class="teaser layout-primary-second__teaser">
+        <article class="teaser">
           {% if presentation.status %}
             <p class="teaser__status">{{ presentation.status }}</p>
             <p>{{ presentation.date }}</p>
@@ -61,13 +61,13 @@ weight: 1
       {% endfor %}
     </div>
   </section>
-  <section class="layout-primary-second community-section">
-    <header class="layout-primary-second__secondary">
+  <section class="community-section">
+    <header class="">
       <h2 class="community-section__title">Blog posts</h2>
     </header>
-    <div class="layout-primary-second__primary">
+    <div class="">
       {% for article in site.articles reversed %}
-        <article class="teaser layout-primary-second__teaser">
+        <article class="teaser">
           <h3>{{ article.title }}</h3>
           <p><time>{{ article.date }}</time></p>
           <a class="teaser__link" href="{{ article.link }}" target="_blank">Read more</a>
