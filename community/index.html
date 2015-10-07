@@ -20,7 +20,7 @@ weight: 1
 <main class="layout-site-container">
   <section class="community-section">
     <div class="">
-      <ul class="introduction introduction--community">
+      <ul class="introduction">
         <li>Active contributor to <a class="sentence-link" href="http://cgit.drupalcode.org/drupal/log/?qt=grep&q=emma.maria" target="_blank">Drupal 8 Core</a>.</li>
         <li>Maintainer of the Drupal 8 Core theme Bartik.</li>
         <li>Sprint organiser and mentor at Drupal events.</li>
@@ -35,30 +35,51 @@ weight: 1
       <h2 class="community-section__title">Speaking</h2>
     </header>
     <div class="">
-      <h3>Upcoming</h3>
-      <!-- add for loop to gather upcoming sessions here -->
-      <h3>Past</h3>
-      {% for presentation in site.presentations reversed %}
-        <article class="teaser">
-          {% if presentation.status %}
-            <p class="teaser__status">{{ presentation.status }}</p>
-            <p>{{ presentation.date }}</p>
-          {% endif %}
-          <h3>{{ presentation.title }}</h3>
-          {% if presentation.status %}
-            <a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a>
-          {% else %}
-            <p>{{ presentation.event-name }}</p>
-          {% endif %}
-          {% if presentation.slides %}
-            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
-          {% endif %}
-          {% if presentation.video %}
-            <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}" target="_blank">Video</a>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
+        <h3 class="session-group__title">Upcoming</h3>
+        <div class="session-group">
+          {% for upcoming in site.upcomings reversed %}  
+            <article class="teaser teaser--presentation">
+              {% if upcoming.status %}
+                <p>{{ upcoming.date }}</p>
+              {% endif %}
+              <h3>{{ upcoming.title }}</h3>
+              {% if upcoming.status %}
+                <a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ upcoming.event-name }}</a>
+              {% else %}
+                <p>{{ upcoming.event-name }}</p>
+              {% endif %}
+              {% if upcoming.slides %}
+                <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
+              {% endif %}
+              {% if upcoming.video %}
+                <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}" target="_blank">Video</a>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+        <h3 class="session-group__title">Past</h3>
+        <div class="session-group">
+        {% for presentation in site.presentations reversed %}  
+          <article class="teaser teaser--presentation">
+            {% if presentation.status %}
+              <p>{{ presentation.date }}</p>
+            {% endif %}
+            <h3>{{ presentation.title }}</h3>
+            {% if presentation.status %}
+              <a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a>
+            {% else %}
+              <p>{{ presentation.event-name }}</p>
+            {% endif %}
+            {% if presentation.slides %}
+              <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if presentation.video %}
+              <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.video }}" target="_blank">Video</a>
+            {% endif %}
+          </article>
+        {% endfor %}
+        </div>
+      </div>
   </section>
   <section class="community-section">
     <header class="">
