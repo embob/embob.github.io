@@ -6,8 +6,11 @@
 .introduction {
   font-size: em(25);
   line-height: em(38,25);
-  margin-bottom: em(25,25);
-  @media #{$tablet-up} {
+}
+.introduction--home {
+	display: none;
+	@media #{$tablet-up} {
+    display: block;
     margin-bottom: em(37,25);
   }
 }
