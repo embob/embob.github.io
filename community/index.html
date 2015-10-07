@@ -36,6 +36,9 @@ weight: 1
       <h2 class="community-section__title">Speaking</h2>
     </header>
     <div class="">
+      <h3>Upcoming</h3>
+      <!-- add for loop to gather upcoming sessions here -->
+      <h3>Past</h3>
       {% for presentation in site.presentations reversed %}
         <article class="teaser">
           {% if presentation.status %}
