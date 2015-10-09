@@ -4,11 +4,13 @@
  */
 
 .byline {
-  font-size: em(32);
-  line-height: em(40,32);
+  font-size: em(22, 16);
+  line-height: em(30,22);
   font-weight: 600;
   padding-top: em(10);
   @media #{$tablet-up} {
+    font-size: em(32);
+  	line-height: em(40,32);
     padding-top: em(5);
   }
 }
