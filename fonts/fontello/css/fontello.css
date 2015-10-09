@@ -61,3 +61,5 @@
 .icon--twitter:before { content: '\e804'; } /* '' */
 .icon--github-circled:before { content: '\e805'; } /* '' */
 .icon--instagram:before { content: '\e806'; } /* '' */
+.icon--slideshare:before { content: '\e800'; } /* '' */
+.icon--videocam:before { content: '\e801'; } /* '' */
