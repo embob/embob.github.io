@@ -7,7 +7,7 @@
 	@media #{$tablet-up} {
 		@include clearfix;
 		&:first-child {
-			margin-bottom: em(20,20);
+			margin-bottom: em(40,20);
 		}		
 	}
 }

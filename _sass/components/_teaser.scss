@@ -12,6 +12,12 @@
 .teaser__status {
   font-style: italic;
 }
+.teaser__date {
+	margin-bottom: em(5,20);
+}
+.teaser__title {
+	margin-bottom: em(7,25);
+}
 .teaser__link {
   line-height: em(28);
 }
@@ -22,9 +28,9 @@
 }
 .teaser--presentation {
 	@media #{$tablet-up} {
-		width: 26%;
+		width: 30%;
 		float: left;
-		margin-right: 8%;
+		margin-right: 5%;
 		&:nth-child(3n+3) {
 			margin-right: 0;
 		}

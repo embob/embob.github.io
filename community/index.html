@@ -40,9 +40,9 @@ weight: 1
             <article class="teaser teaser--presentation">
               {% if upcoming.status %}
                 <p class="alert">Upcoming</p>
-                <p>{{ upcoming.date }}</p>
+                <p class="teaser__date">{{ upcoming.date }}</p>
               {% endif %}
-              <h3>{{ upcoming.title }}</h3>
+              <h3 class="teaser__title">{{ upcoming.title }}</h3>
                 <p><a  href="{{ presentation.event-link }}" target="_blank">{{ upcoming.event-name }}</a></p>
               {% if upcoming.slides %}
                 <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
@@ -57,9 +57,9 @@ weight: 1
         {% for presentation in site.presentations reversed %}  
           <article class="teaser teaser--presentation">
             {% if presentation.status %}
-              <p>{{ presentation.date }}</p>
+              <p class="teaser__date">{{ presentation.date }}</p>
             {% endif %}
-            <h3>{{ presentation.title }}</h3>
+            <h3 class="teaser__title">{{ presentation.title }}</h3>
             <p><a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a></p>
             {% if presentation.slides %}
               <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
