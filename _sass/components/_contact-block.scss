@@ -12,6 +12,7 @@
   font-size: em(22);
   line-height: em(36, 22);
   @media #{$tablet-up} {
+  	font-size: em(20);
     line-height: em(38, 20);
   }
 }
