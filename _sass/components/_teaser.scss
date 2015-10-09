@@ -12,6 +12,14 @@
 .teaser__status {
   font-style: italic;
 }
+.teaser__date {
+	margin-bottom: em(5,20);
+}
 .teaser__link {
   line-height: em(28);
+}
+.upcoming-group {
+	@media #{$tablet-up} {
+		@include clearfix;
+	}
 }

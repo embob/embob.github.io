@@ -10,10 +10,7 @@
 // For icons shown with text
 .icon--before-text:before {
   width: 30px;
-  margin-right: em(10);
-  @media #{$tablet-up} {
-    margin-right: em(5);
-  }
+  margin-left: 0;
 }
 
 // Drupal
@@ -33,8 +30,12 @@
 }
 
 // Gmail
+.icon--gmail {
+  margin-right: em(10, 45);
+}
 .icon--gmail:before {
   color: $gmail;
+  margin-right: em(7);
 }
 .icon--gmail:hover:before {
   color: $gmail-darken;
@@ -46,6 +47,14 @@
 }
 .icon--github-circled:hover:before {
    color: $github-lighten;
+}
+
+// Instagram
+.icon--instagram:before {
+  color: $instagram;
+}
+.icon--instagram:hover:before {
+  color: $instagram-darken;
 }
 
 // Skype

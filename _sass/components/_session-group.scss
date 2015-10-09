@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Styles for the session group sections.
+ */
+
+.session-group {
+	&:first-child {
+		margin-bottom: em(40,20);
+	}	
+	@media #{$tablet-up} {
+		@include clearfix;
+			
+	}
+}
