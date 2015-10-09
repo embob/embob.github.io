@@ -36,6 +36,7 @@
 .icon--gmail:before {
   color: $gmail;
   margin-right: em(7);
+  margin-left:0;
 }
 .icon--gmail:hover:before {
   color: $gmail-darken;

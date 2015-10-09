@@ -55,8 +55,8 @@ ul li {
 
 // Heading styles
 h1 {
-  font-size: em(52, 16);
-  margin-left: em(-2, 52);
+  font-size: em(44, 16);
+  margin-left: em(-2, 44);
   @media #{$tablet-up} {
     font-size: em(66);
     margin-left: em(-3, 66);
