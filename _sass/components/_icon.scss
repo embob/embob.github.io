@@ -48,6 +48,20 @@
    color: $github-lighten;
 }
 
+// Instagram
+.icon--instagram:before {
+  color: $instagram;
+}
+.icon--instagram:hover:before {
+  color: $instagram-darken;
+}
+
+// Slideshare
+
+
+// Video
+
+
 // Skype
 .icon--skype:before {
   color: $skype;

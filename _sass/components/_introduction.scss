@@ -4,13 +4,18 @@
  */
 
 .introduction {
-  font-size: em(25);
-  line-height: em(38,25);
+	font-size: em(22);
+	line-height: em(30,22);
+	@media #{$tablet-up} {
+  	font-size: em(24);
+  	line-height: em(37,24);
+  }
 }
 .introduction--home {
 	display: none;
 	@media #{$tablet-up} {
     display: block;
-    margin-bottom: em(37,25);
+    font-size: em(25);
+  	line-height: em(38,25);
   }
 }
