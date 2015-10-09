@@ -28,9 +28,9 @@
 }
 .teaser--presentation {
 	@media #{$tablet-up} {
-		width: 30%;
+		width: 30.666666667%;
 		float: left;
-		margin-right: 5%;
+		margin-right: 4%;
 		&:nth-child(3n+3) {
 			margin-right: 0;
 		}

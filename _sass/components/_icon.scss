@@ -10,10 +10,7 @@
 // For icons shown with text
 .icon--before-text:before {
   width: 30px;
-  margin-right: em(10);
-  @media #{$tablet-up} {
-    margin-right: em(5);
-  }
+  margin-left: 0;
 }
 
 // Drupal
@@ -38,7 +35,7 @@
 }
 .icon--gmail:before {
   color: $gmail;
-  margin-left: 0;
+  margin-right: em(7);
 }
 .icon--gmail:hover:before {
   color: $gmail-darken;
