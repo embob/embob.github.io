@@ -11,12 +11,9 @@
   }
 }
 .community-section__title {
-  @media #{$mobile} {
-    font-size: em(32);
-    margin-bottom: em(28,32);
-  }
+  font-size: em(32);
+  margin-bottom: em(20, 32);
 }
-
 .upcoming-group__title {
 	margin-bottom: 20px;
 }
