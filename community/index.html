@@ -60,7 +60,7 @@ weight: 1
               <p class="teaser__date">{{ presentation.date }}</p>
             {% endif %}
             <h3 class="teaser__title">{{ presentation.title }}</h3>
-            <p><a class="teaser__link" href="{{ presentation.event-link }}" target="_blank">{{ presentation.event-name }}</a></p>
+            <p>@ {{ presentation.event-name }}</p>
             {% if presentation.slides %}
               <a class="teaser__link inline-content--tablet-up inline-content--more-spacing" href="{{ presentation.slides }}" target="_blank">Slides</a>
             {% endif %}
