@@ -36,3 +36,9 @@
     margin-bottom: em(5,25);
   }
 }
+
+@media screen {
+  .cv-section--reference {
+    display: none;
+  }
+}
